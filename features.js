@@ -10,7 +10,7 @@ async function searchWikipedia(searchQuery) {
   return json;
 }
 
-async function search(input) {
+async function searchDefinition(input) {
 
   const inputValue = input;
   const searchQuery = inputValue.trim();
@@ -45,7 +45,34 @@ async function search(input) {
 }
 
 
-search('Quantum Mechanics')
+async function searchReference(input) {
+
+  const inputValue = input;
+  const searchQuery = inputValue.trim();
+  try {
+
+    // Cross-ref API
+    // (https://www.crossref.org/documentation/retrieve-metadata/rest-api)
+
+    const url = `http://api.crossref.org/works?query.bibliographic="${searchQuery}"&rows=2`
+    const response = await fetch(url);
+    const json = await response.json();
+
+    link = json.message.items[0].URL;
+    console.log(link);
+
+    return link;
+
+  } catch (err) {
+    console.log('Error');
+    console.log(err);
+
+    return '';
+  }
+}
+
+//searchDefinition('Fourier Transform');
+//searchReference('SpotFi: Decimeter Level Localization Using WiFi');
 
 
 
