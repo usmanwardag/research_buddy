@@ -1,20 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var checkPageButton = document.getElementById('checkPage');
-    checkPageButton.addEventListener('click', function() {
-  
-      chrome.tabs.getSelected(null, function(tab) {
-        d = document;
+function getSelectedText() {
+  var text = "";
+  if (typeof window.getSelection != "undefined") {
+    text = window.getSelection().toString();
+  } else if (typeof document.selection != "undefined" && document.selection.type == "Text") {
+    text = document.selection.createRange().text;
+  }
+  console.log(text);
+  return text;
+}
 
-        var f = d.createElement('form');
-        f.action = 'http://gtmetrix.com/analyze.html?bm';
-        f.method = 'post';
-        var i = d.createElement('input');
-        i.type = 'hidden';
-        i.name = 'url';
-        i.value = tab.url;
-        f.appendChild(i);
-        d.body.appendChild(f);
-        f.submit();
-      });
-    }, false);
-}, false);
+function doSomethingWithSelectedText() {
+  var selectedText = getSelectedText();
+  if (selectedText) {
+
+    $('#infoDiv').css('display', 'block');
+    $('#infoDiv').css('position', 'absolute');
+    $('#infoDiv').css('left', event.clientX + 10);
+    $('#infoDiv').css('top', event.clientY + 15);
+  } else {
+    $('#infoDiv').css('display', 'none');
+  };
+};
+
+document.onmouseup = doSomethingWithSelectedText;
+document.onkeyup = doSomethingWithSelectedText;
