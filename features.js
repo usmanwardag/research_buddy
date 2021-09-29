@@ -12,12 +12,10 @@ async function searchWikipedia(searchQuery) {
 
 async function search(input) {
 
-  const inputValue = 'WiFi';
+  const inputValue = input;
   const searchQuery = inputValue.trim();
   try {
     const results = await searchWikipedia(searchQuery);
-
-    //console.log(results.query.searchinfo.totalhits);
 
     if (results.query.searchinfo.totalhits === 0) {
       console.log('No results found.');
@@ -25,37 +23,29 @@ async function search(input) {
     pageid = results.query.search[0].pageid;
     console.log(pageid);
 
-    const title_url = `https://en.wikipedia.org/w/api.php?action=query&pageids=${pageid}&origin=*&format=json`;
-    const title_response = await fetch(title_url);
-    const title_json = await title_response.json();
+    const summary_url = `https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&pageids=${pageid}&origin=*`
+    const summary_response = await fetch(summary_url);
+    const summary_json = await summary_response.json();
 
-    title = title_json.query.pages[pageid].title;
-    console.log(title);
+    summary = summary_json.query.pages[pageid].extract;
+    summary = summary.split('.');
+    summary = summary[0] + '. ' + summary[1] + '.';
 
-    const content_url = `http://en.wikipedia.org/w/api.php?action=parse&prop=text&page=${title}&origin=*&format=json`
-    const content_response = await fetch(content_url);
-    const content_json = await content_response.json();
+    console.log('Summary')
+    console.log(summary);
 
-    console.log(content_json);
-
-    text = content_json.parse.text['*'];
-    text = text.toString().replace(/<[^>]*>/g, '');
-    text = text.toString().replace(/\n/g, '. ');
-    console.log(text);
-    text = text.split('.');
-    text = text[0] + '. ' + text[1] + '.';
-
-    console.log(text);
-
+    return summary;
 
   } catch (err) {
+    console.log('Error');
     console.log(err);
+
+    return '';
   }
 }
 
 
-console.log('Hey world')
-search()
+search('Quantum Mechanics')
 
 
 
