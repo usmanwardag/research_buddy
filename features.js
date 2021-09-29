@@ -83,8 +83,6 @@ async function searchPapers(input) {
 //searchPapers('SpotFi: Decimeter Level Localization Using WiFi');
 
 
-
-
 async function searchVideos(input) {
  try{
   const inputValue = input;
@@ -112,6 +110,38 @@ async function searchVideos(input) {
 
   return '';
  }
-  
 
 }
+ async function searchInGit(input){
+  try{
+  const inputValue = input;
+  const searchQuery = inputValue.trim();
+  const git_links = `https://github.com/search?q=${searchQuery}`
+  console.log(git_links);
+  return git_links;
+  }
+  catch(error){
+  console.log('Error');
+  console.log(err);
+
+  return '';
+  }
+
+}
+
+async function googleScholarSearch(input){
+  try{
+  const inputValue = input;
+  const searchQuery = inputValue.trim();
+  const gs_link = `https://scholar.google.com/scholar?hl=en&as_sdt=0%2C34&q=${searchQuery}&btnG=`
+  console.log(gs_link);
+  return gs_link;
+  }
+  catch(error){
+  console.log('Error');
+  console.log(err);
+
+  return '';
+  }
+}
+

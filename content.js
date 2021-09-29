@@ -7,5 +7,7 @@ document.addEventListener("click", () => {
     searchDefinition(text);
     searchPapers(text);
     searchVideos(text);
+    searchInGit(text);
+    googleScholarSearch(text);
   }
 });
