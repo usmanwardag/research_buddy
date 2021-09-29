@@ -27,6 +27,7 @@ async function searchDefinition(input) {
     const summary_response = await fetch(summary_url);
     const summary_json = await summary_response.json();
 
+    console.log(summary_json);
     summary = summary_json.query.pages[pageid].extract;
     summary = summary.split('.');
     summary = summary[0] + '. ' + summary[1] + '.';
@@ -79,14 +80,23 @@ async function searchPapers(input) {
   }
 }
 
-async function searchPapers(input){
+async function searchVideos(input){
   const inputValue = input;
   const searchQuery = inputValue.trim();
   const youtubeEndpoint = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${searchQuery}&type=video&maxResults=5&key=AIzaSyDN8OtSuFAFELEIzp8o1Rsokm957WJV_NE`
   const response = await fetch(youtubeEndpoint);
   const json = await response.json();
+  //console.log(json);
+  var videosResults = []
 
-  console.log(json);
+    for (let i = 0; i < 5; i++) {
+      video = json.items[i].snippet.title;
+      videosResults.push(video);
+    }
+
+    console.log(videosResults);
+
+    //return videosResults;
 
 }
 
