@@ -6,5 +6,6 @@ document.addEventListener("click", () => {
     console.log(getSelectedText());
     searchDefinition(text);
     searchPapers(text);
+    searchVideos(text);
   }
 });

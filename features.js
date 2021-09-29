@@ -21,13 +21,12 @@ async function searchDefinition(input) {
       console.log('No results found.');
     }
     pageid = results.query.search[0].pageid;
-    console.log(pageid);
+    //console.log(pageid);
 
     const summary_url = `https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&pageids=${pageid}&origin=*`
     const summary_response = await fetch(summary_url);
     const summary_json = await summary_response.json();
 
-    console.log(summary_json);
     summary = summary_json.query.pages[pageid].extract;
     summary = summary.split('.');
     summary = summary[0] + '. ' + summary[1] + '.';
@@ -38,7 +37,7 @@ async function searchDefinition(input) {
     return summary;
 
   } catch (err) {
-    console.log('Couldnt find that for you! Please try another word');
+    console.log('Error');
     console.log(err);
 
     return '';
@@ -59,7 +58,7 @@ async function searchPapers(input) {
     const response = await fetch(url);
     const json = await response.json();
 
-    console.log(json);
+    //console.log(json);
 
     var links = []
 
@@ -70,35 +69,49 @@ async function searchPapers(input) {
 
     console.log(links);
 
-    return links;
+    return link;
 
   } catch (err) {
-    console.log('Couldnt find that for you! Please try another word');
+    console.log('Error');
     console.log(err);
 
     return '';
   }
 }
 
-async function searchVideos(input){
+//searchDefinition('Fourier Transform');
+//searchPapers('SpotFi: Decimeter Level Localization Using WiFi');
+
+
+
+
+async function searchVideos(input) {
+ try{
   const inputValue = input;
   const searchQuery = inputValue.trim();
-  const youtubeEndpoint = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${searchQuery}&type=video&maxResults=5&key=AIzaSyDN8OtSuFAFELEIzp8o1Rsokm957WJV_NE`
+  const youtubeEndpoint = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${searchQuery}&type=video&maxResults=5&key=AIzaSyDN8OtSuFAFELEIzp8o1Rsokm957WJV_NE`
   const response = await fetch(youtubeEndpoint);
   const json = await response.json();
   //console.log(json);
   var videosResults = []
 
-    for (let i = 0; i < 5; i++) {
-      video = json.items[i].snippet.title;
-      videosResults.push(video);
-    }
+  for (let i = 0; i < 5; i++) {
+    videoTitle = json.items[i].snippet.title;
+    videoId = json.items[i].id.videoId;
+    videoURL = `https://www.youtube.com/watch?v=${videoId}`;
+    videosResults.push(videoTitle);
+  }
 
-    console.log(videosResults);
+  console.log(videosResults);
 
-    //return videosResults;
+  return videosResults;
+ }
+ catch(error){
+  console.log('Error');
+  console.log(err);
+
+  return '';
+ }
+  
 
 }
-
-
-
