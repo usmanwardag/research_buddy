@@ -79,8 +79,16 @@ async function searchPapers(input) {
   }
 }
 
-//searchDefinition('Fourier Transform');
-//searchPapers('SpotFi: Decimeter Level Localization Using WiFi');
+async function searchPapers(input){
+  const inputValue = input;
+  const searchQuery = inputValue.trim();
+  const youtubeEndpoint = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${searchQuery}&type=video&maxResults=5&key=AIzaSyDN8OtSuFAFELEIzp8o1Rsokm957WJV_NE`
+  const response = await fetch(youtubeEndpoint);
+  const json = await response.json();
+
+  console.log(json);
+
+}
 
 
 
