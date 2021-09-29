@@ -33,7 +33,7 @@ async function searchDefinition(input) {
 
     console.log('Summary')
     console.log(summary);
-
+    alert("SUMMARY:"+"\n"+summary)
     return summary;
 
   } catch (err) {
