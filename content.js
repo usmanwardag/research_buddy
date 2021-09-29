@@ -5,5 +5,6 @@ document.addEventListener("click", () => {
     text = getSelectedText();
     console.log(getSelectedText());
     searchDefinition(text);
+    searchPapers(text);
   }
 });

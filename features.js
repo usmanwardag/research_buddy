@@ -45,7 +45,7 @@ async function searchDefinition(input) {
 }
 
 
-async function searchReference(input) {
+async function searchPapers(input) {
 
   const inputValue = input;
   const searchQuery = inputValue.trim();
@@ -54,12 +54,20 @@ async function searchReference(input) {
     // Cross-ref API
     // (https://www.crossref.org/documentation/retrieve-metadata/rest-api)
 
-    const url = `http://api.crossref.org/works?query.bibliographic="${searchQuery}"&rows=2`
+    const url = `https://api.crossref.org/works?query.bibliographic="${searchQuery}"&rows=5`
     const response = await fetch(url);
     const json = await response.json();
 
-    link = json.message.items[0].URL;
-    console.log(link);
+    console.log(json);
+
+    var links = []
+
+    for (let i = 0; i < 5; i++) {
+      link = json.message.items[i].URL;
+      links.push(link);
+    }
+
+    console.log(links);
 
     return link;
 
@@ -72,7 +80,7 @@ async function searchReference(input) {
 }
 
 //searchDefinition('Fourier Transform');
-//searchReference('SpotFi: Decimeter Level Localization Using WiFi');
+//searchPapers('SpotFi: Decimeter Level Localization Using WiFi');
 
 
 
