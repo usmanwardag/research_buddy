@@ -37,7 +37,7 @@ async function searchDefinition(input) {
     return summary;
 
   } catch (err) {
-    console.log('Error');
+    console.log('Couldnt find that for you! Please try another word');
     console.log(err);
 
     return '';
@@ -69,10 +69,10 @@ async function searchPapers(input) {
 
     console.log(links);
 
-    return link;
+    return links;
 
   } catch (err) {
-    console.log('Error');
+    console.log('Couldnt find that for you! Please try another word');
     console.log(err);
 
     return '';
