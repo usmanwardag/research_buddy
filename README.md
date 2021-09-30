@@ -18,9 +18,9 @@ Are you someone who frequently reads or writes a research papers. Have you ever 
 
 Ahh! So cliche.
 
-If Yes, then this tool is gonna make your life simple!
+If Yes, then this tool is going to make your life simple!
 
-Double clicking any word will give you a popup displaying the top 5 citations, youtube links, google scholar links, github links. If you are not sure what an abbreviated word means in the paper, this tool also provides you its meaning from wikipedia, udemy and coursera links.
+Double clicking any word will give you a popup displaying the top 5 citations, youtube links, google scholar links, and github links. If you are unsure what an abbreviated word means in the paper, this tool also provides you its meaning from wikipedia, udemy and coursera links.
 
 ![Alt Text](https://media.giphy.com/media/YVmL3uMI8IobhU6KD7/giphy.gif)
 
