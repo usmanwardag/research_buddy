@@ -17,9 +17,9 @@ document.addEventListener(
 			searchPapers(text);
 			searchVideos(text);
 			searchInGit(text);
-			googleScholarSearch(text);
-			courseraSearch(text);
-			udemySearch(text);
+			searchGoogleScholar(text);
+			searchCoursera(text);
+			searchUdemy(text);
 		}
 	},
 	false
@@ -34,10 +34,13 @@ document.addEventListener(
 	false
 );
 
-// 
 /**
- * move the bubble to cursor location and make it visible
-*/
+ * This function returns the related Udemy search results
+ * @param {string} mouseX X coordinate of the mouse pointer location
+ * @param {string} mouseY Y coordinate of the mouse pointer location
+ * @param {string} html The detail fetched to be displayed on screen
+ * @returns {string} Displays the details fetched in a pop-up on screen
+ */
 function showBubble(mouseX, mouseY, html) {
 	bubbleDOM.innerHTML = html;
 	bubbleDOM.style.top = document.documentElement.scrollTop + mouseY + 'px';

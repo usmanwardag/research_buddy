@@ -14,10 +14,11 @@ async function searchWikipedia(searchQuery) {
 }
 
 /**
-* This function searches for function's definition. 
-* @param {string} any string. 
-* @returns {string} wikipedia summary. 
-*/
+ * 
+ * This function searches for function's definition.
+ * @param {string} input User selected word/phrase
+ * @returns {string} Definition of input picked from Wikipedia
+ */
 async function searchDefinition(input) {
 	const inputValue = input;
 	const searchQuery = inputValue.trim();
@@ -50,6 +51,11 @@ async function searchDefinition(input) {
 	}
 }
 
+/**
+ * This function returns the top 5 related Research Articles DOI
+ * @param {string} input User selected word/phrase
+ * @returns {string} Top 5 related Research articles DOI
+ */
 async function searchPapers(input) {
 	const inputValue = input;
 	const searchQuery = inputValue.trim();
@@ -85,6 +91,11 @@ async function searchPapers(input) {
 //searchDefinition('Fourier Transform');
 //searchPapers('SpotFi: Decimeter Level Localization Using WiFi');
 
+/**
+ * This function returns the Top 5 Youtube Videos
+ * @param {string} input User selected word/phrase
+ * @returns {string} Top 5 related Youtube Videos
+ */
 async function searchVideos(input) {
 	try {
 		const inputValue = input;
@@ -113,7 +124,13 @@ async function searchVideos(input) {
 		return '';
 	}
 }
-async function searchInGit(input) {
+
+/**
+ * This function returns the related Github search results
+ * @param {string} input User selected word/phrase
+ * @returns {string} Related Github search results
+ */
+function searchInGit(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
@@ -129,7 +146,12 @@ async function searchInGit(input) {
 	}
 }
 
-async function googleScholarSearch(input) {
+/**
+ * This function returns the related GoogleScholar search results
+ * @param {string} input User selected word/phrase
+ * @returns {string} Related GoogleScholar search results
+ */
+async function searchGoogleScholar(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
@@ -145,7 +167,12 @@ async function googleScholarSearch(input) {
 	}
 }
 
-async function courseraSearch(input) {
+/**
+ * This function returns the related Coursera search results
+ * @param {string} input User selected word/phrase
+ * @returns {string} Related Coursera search results
+ */
+async function searchCoursera(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
@@ -161,7 +188,12 @@ async function courseraSearch(input) {
 	}
 }
 
-async function udemySearch(input) {
+/**
+ * This function returns the related Udemy search results
+ * @param {string} input User selected word/phrase
+ * @returns {string} Related Udemy search results
+ */
+async function searchUdemy(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
