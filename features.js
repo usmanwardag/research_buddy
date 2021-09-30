@@ -91,6 +91,11 @@ async function searchPapers(input) {
 //searchDefinition('Fourier Transform');
 //searchPapers('SpotFi: Decimeter Level Localization Using WiFi');
 
+/**
+ * This function returns the Top 5 Youtube Videos
+ * @param {string} input User selected word/phrase
+ * @returns {string} Top 5 related Youtube Videos
+ */
 async function searchVideos(input) {
 	try {
 		const inputValue = input;
