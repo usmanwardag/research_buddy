@@ -1,6 +1,15 @@
 module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
+        coveralls: {
+          options: {
+            force: false
+          },
+
+          your_target: {
+            src: 'coverage-results/extra-results-*.info',
+          },
+        },
         qunit: {
             files: ['test/index.html']
         }
