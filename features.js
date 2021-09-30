@@ -52,9 +52,9 @@ async function searchDefinition(input) {
 }
 
 /**
- * This function returns the top 5 related Research Articles
+ * This function returns the top 5 related Research Articles DOI
  * @param {string} input User selected word/phrase
- * @returns {string} Top 5 related Research articles
+ * @returns {string} Top 5 related Research articles DOI
  */
 async function searchPapers(input) {
 	const inputValue = input;
@@ -167,7 +167,12 @@ async function searchGoogleScholar(input) {
 	}
 }
 
-async function courseraSearch(input) {
+/**
+ * This function returns the related GoogleScholar search results
+ * @param {string} input User selected word/phrase
+ * @returns {string} Related GoogleScholar search results
+ */
+async function searchCoursera(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
@@ -183,7 +188,7 @@ async function courseraSearch(input) {
 	}
 }
 
-async function udemySearch(input) {
+async function searchUdemy(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
