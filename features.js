@@ -14,10 +14,11 @@ async function searchWikipedia(searchQuery) {
 }
 
 /**
-* This function searches for function's definition. 
-* @param {string} any string. 
-* @returns {string} wikipedia summary. 
-*/
+ * 
+ * This function searches for function's definition.
+ * @param {string} User selected word/phrase
+ * @returns {string} Definition of input picked from Wikipedia
+ */
 async function searchDefinition(input) {
 	const inputValue = input;
 	const searchQuery = inputValue.trim();
