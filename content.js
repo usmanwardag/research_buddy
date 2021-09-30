@@ -18,6 +18,8 @@ document.addEventListener(
 			searchVideos(text);
 			searchInGit(text);
 			googleScholarSearch(text);
+			courseraSearch(text);
+			udemySearch(text);
 		}
 	},
 	false

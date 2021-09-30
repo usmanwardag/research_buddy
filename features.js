@@ -21,6 +21,7 @@ async function searchWikipedia(searchQuery) {
 async function searchDefinition(input) {
 	const inputValue = input;
 	const searchQuery = inputValue.trim();
+	
 	try {
 		const results = await searchWikipedia(searchQuery);
 
@@ -52,6 +53,7 @@ async function searchDefinition(input) {
 async function searchPapers(input) {
 	const inputValue = input;
 	const searchQuery = inputValue.trim();
+	
 	try {
 		// Cross-ref API
 		// (https://www.crossref.org/documentation/retrieve-metadata/rest-api)
@@ -87,6 +89,7 @@ async function searchVideos(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
+		
 		const youtubeEndpoint = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${searchQuery}&type=video&maxResults=5&key=AIzaSyDN8OtSuFAFELEIzp8o1Rsokm957WJV_NE`;
 		const response = await fetch(youtubeEndpoint);
 		const json = await response.json();
@@ -114,7 +117,8 @@ async function searchInGit(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
-		const git_links = `https://github.com/search?q=${searchQuery}`;
+		const new_query= searchQuery.replace(" ", "+")
+		const git_links = `https://github.com/search?q=${new_query}`;
 		console.log(git_links);
 		return git_links;
 	} catch (error) {
@@ -129,9 +133,42 @@ async function googleScholarSearch(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
-		const gs_link = `https://scholar.google.com/scholar?hl=en&as_sdt=0%2C34&q=${searchQuery}&btnG=`;
+		const new_query= searchQuery.replace(" ", "+")
+		const gs_link = `https://scholar.google.com/scholar?hl=en&as_sdt=0%2C34&q=${new_query}&btnG=`;
 		console.log(gs_link);
 		return gs_link;
+	} catch (error) {
+		console.log('Error');
+		console.log(err);
+
+		return '';
+	}
+}
+
+async function courseraSearch(input) {
+	try {
+		const inputValue = input;
+		const searchQuery = inputValue.trim();
+		const new_query= searchQuery.replace(" ", "+")
+		const coursera_link = `https://www.coursera.org/search?query=${new_query}`;
+		console.log(coursera_link);
+		return coursera_link;
+	} catch (error) {
+		console.log('Error');
+		console.log(err);
+
+		return '';
+	}
+}
+
+async function udemySearch(input) {
+	try {
+		const inputValue = input;
+		const searchQuery = inputValue.trim();
+		const new_query= searchQuery.replace(" ", "+")
+		const udemy_link = `https://www.udemy.com/courses/search/?src=ukw&q=${new_query}`;
+		console.log(udemy_link);
+		return udemy_link;
 	} catch (error) {
 		console.log('Error');
 		console.log(err);
