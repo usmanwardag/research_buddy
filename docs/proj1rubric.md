@@ -43,7 +43,7 @@
 | Question 4.1: Is your documentation clearly available on your website or within your software? |  |  |
 | Question 4.2: Does your documentation include a "quick start" guide, that provides a short overview of how to use your software with some basic examples of use? |  |  |
 | Question 4.3: If you provide more extensive documentation, does this provide clear, step-by-step instructions on how to deploy and use your software? |  |  |
-| Question 4.4: Do you provide a comprehensive guide to all your software’s commands, functions and options? * |  |  |
+| Question 4.4: Do you provide a comprehensive guide to all your software’s commands, functions and options?  |  |  |
 | Question 4.5: Do you provide troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages? * |  |  |
 | Question 4.6: If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation? * |  |  |
 | Question 4.7: Do you store your documentation under revision control with your source code? * |  |  |
