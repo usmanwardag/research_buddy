@@ -30,7 +30,9 @@ async function searchDefinition(input) {
 			console.log('No results found.');
 		}
 		pageid = results.query.search[0].pageid;
-		//console.log(pageid);
+    pageurl = `https://en.wikipedia.org/?curid=${pageid}`
+		console.log(pageid);
+    console.log(pageurl);
 
 		const summary_url = `https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&pageids=${pageid}&origin=*`;
 		const summary_response = await fetch(summary_url);
@@ -42,7 +44,8 @@ async function searchDefinition(input) {
 
 		console.log('Summary');
 		console.log(summary);
-		return summary;
+		return summary, pageurl;
+
 	} catch (err) {
 		console.log('Error');
 		console.log(err);
@@ -100,7 +103,8 @@ async function searchVideos(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
-		
+	
+    /**
 		const youtubeEndpoint = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${searchQuery}&type=video&maxResults=5&key=AIzaSyDN8OtSuFAFELEIzp8o1Rsokm957WJV_NE`;
 		const response = await fetch(youtubeEndpoint);
 		const json = await response.json();
@@ -115,8 +119,12 @@ async function searchVideos(input) {
 		}
 
 		console.log(videosResults);
+    **/
 
-		return videosResults;
+    youtubeLink = `https://www.youtube.com/results?search_query=${input}`
+    console.log(youtubeLink);
+
+		return youtubeLink;
 	} catch (error) {
 		console.log('Error' + err.message);
 		console.log(err);
@@ -135,9 +143,9 @@ function searchInGit(input) {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
 		const new_query= searchQuery.replace(" ", "+")
-		const git_links = `https://github.com/search?q=${new_query}`;
-		console.log(git_links);
-		return git_links;
+		const git_link = `https://github.com/search?q=${new_query}`;
+		console.log(git_link);
+		return git_link;
 	} catch (error) {
 		console.log('Error');
 		console.log(err);
