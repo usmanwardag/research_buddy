@@ -17,7 +17,7 @@ document.addEventListener(
 			searchPapers(text);
 			searchVideos(text);
 			searchInGit(text);
-			googleScholarSearch(text);
+			searchGoogleScholar(text);
 			courseraSearch(text);
 			udemySearch(text);
 		}
