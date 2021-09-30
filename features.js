@@ -82,35 +82,65 @@ async function searchPapers(input) {
 //searchPapers('SpotFi: Decimeter Level Localization Using WiFi');
 
 
-
-
 async function searchVideos(input) {
- try{
-  const inputValue = input;
-  const searchQuery = inputValue.trim();
-  const youtubeEndpoint = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${searchQuery}&type=video&maxResults=5&key=AIzaSyDN8OtSuFAFELEIzp8o1Rsokm957WJV_NE`
-  const response = await fetch(youtubeEndpoint);
-  const json = await response.json();
-  //console.log(json);
-  var videosResults = []
+  try {
+    const inputValue = input;
+    const searchQuery = inputValue.trim();
+    const youtubeEndpoint = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${searchQuery}&type=video&maxResults=5&key=AIzaSyDN8OtSuFAFELEIzp8o1Rsokm957WJV_NE`
+    const response = await fetch(youtubeEndpoint);
+    const json = await response.json();
+    //console.log(json);
+    var videosResults = []
 
-  for (let i = 0; i < 5; i++) {
-    videoTitle = json.items[i].snippet.title;
-    videoId = json.items[i].id.videoId;
-    videoURL = `https://www.youtube.com/watch?v=${videoId}`;
-    videosResults.push(videoTitle);
+    for (let i = 0; i < 5; i++) {
+      videoTitle = json.items[i].snippet.title;
+      videoId = json.items[i].id.videoId;
+      videoURL = `https://www.youtube.com/watch?v=${videoId}`;
+      videosResults.push(videoTitle);
+    }
+
+    console.log(videosResults);
+
+    return videosResults;
+  }
+  catch (error) {
+    console.log("Error" + err.message);
+    console.log(err);
+
+    return '';
   }
 
-  console.log(videosResults);
+}
+async function searchInGit(input) {
+  try {
+    const inputValue = input;
+    const searchQuery = inputValue.trim();
+    const git_links = `https://github.com/search?q=${searchQuery}`
+    console.log(git_links);
+    return git_links;
+  }
+  catch (error) {
+    console.log('Error');
+    console.log(err);
 
-  return videosResults;
- }
- catch(error){
-  console.log("Error"+ err.message);
-  console.log(err);
-
-  return '';
- }
-  
+    return '';
+  }
 
 }
+
+async function googleScholarSearch(input) {
+  try {
+    const inputValue = input;
+    const searchQuery = inputValue.trim();
+    const gs_link = `https://scholar.google.com/scholar?hl=en&as_sdt=0%2C34&q=${searchQuery}&btnG=`
+    console.log(gs_link);
+    return gs_link;
+  }
+  catch (error) {
+    console.log('Error');
+    console.log(err);
+
+    return '';
+  }
+}
+
