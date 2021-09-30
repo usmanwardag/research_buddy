@@ -168,9 +168,9 @@ async function searchGoogleScholar(input) {
 }
 
 /**
- * This function returns the related GoogleScholar search results
+ * This function returns the related Coursera search results
  * @param {string} input User selected word/phrase
- * @returns {string} Related GoogleScholar search results
+ * @returns {string} Related Coursera search results
  */
 async function searchCoursera(input) {
 	try {
@@ -188,6 +188,11 @@ async function searchCoursera(input) {
 	}
 }
 
+/**
+ * This function returns the related Udemy search results
+ * @param {string} input User selected word/phrase
+ * @returns {string} Related Udemy search results
+ */
 async function searchUdemy(input) {
 	try {
 		const inputValue = input;
