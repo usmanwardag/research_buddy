@@ -5,6 +5,6 @@ node_js:
 sudo: false
 
 before_script:
-  - npm install -g grunt
+  - npm install grunt --save-dev 
 
 script: grunt test --verbose --force
