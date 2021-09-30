@@ -21,8 +21,9 @@
   },
   "homepage": "https://github.com/usmanwardag/research_buddy#readme",
   "devDependencies": {
+    "coveralls": "^3.1.1",
     "jsdoc": "^3.6.7"
   },
-  "doc": "jsdoc -d docs --configure jsconf.json content.js"
-
+  "doc": "jsdoc -d docs --configure jsconf.json content.js",
+  "coverage": "npm run pretest && jest --coverage && cat ./coverage/lcov.info | coveralls"
 }
