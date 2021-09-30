@@ -33,7 +33,6 @@ async function searchDefinition(input) {
 
     console.log('Summary')
     console.log(summary);
-    alert("SUMMARY:"+"\n"+summary)
     return summary;
 
   } catch (err) {
@@ -107,7 +106,7 @@ async function searchVideos(input) {
   return videosResults;
  }
  catch(error){
-  console.log('Error');
+  console.log("Error"+ err.message);
   console.log(err);
 
   return '';
