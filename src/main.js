@@ -11,15 +11,19 @@ document.addEventListener(
 	e => {
 		if (getSelectedText().length > 0) {
 			text = getSelectedText();
-			searchDefinition(text).then(summary => {
+			var values = searchDefinition (text);
+			var wifkiDefinition =  values[0];
+			var wikiURL = values[1];
+			/*searchDefinition(text).then(summary => {
 				showBubble(e.clientX, e.clientY, summary);
-			});
-			searchPapers(text);
-			searchVideos(text);
-			searchInGit(text);
-			searchGoogleScholar(text);
-			searchCoursera(text);
-			searchUdemy(text);
+			});*/
+			var papers = searchPapers(text);
+			var youtubeLink = searchVideos(text);
+			var gitLink = searchInGit(text);
+			var scholarLink = searchGoogleScholar(text);
+			var courseraLink = searchCoursera(text);
+			var udemyLink = searchUdemy(text);
+			showBubble(e.clientX, e.clientY, wifkiDefinition);
 		}
 	},
 	false
