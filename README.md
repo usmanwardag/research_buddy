@@ -3,6 +3,7 @@
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/usmanwardag/research_buddy)
 
 [![Build Status](https://app.travis-ci.com/usmanwardag/research_buddy.svg?branch=main)](https://app.travis-ci.com/usmanwardag/research_buddy)
+[![Coverage Status](https://coveralls.io/repos/github/usmanwardag/research_buddy/badge.svg?branch=main)](https://coveralls.io/github/usmanwardag/research_buddy?branch=main)
 
 [![GitHub license](https://img.shields.io/github/license/usmanwardag/research_buddy)](https://github.com/usmanwardag/research_buddy/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/usmanwardag/research_buddy)](https://github.com/usmanwardag/research_buddy/issues)
