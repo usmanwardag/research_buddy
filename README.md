@@ -11,6 +11,17 @@
 [![GitHub stars](https://img.shields.io/github/stars/usmanwardag/research_buddy)](https://github.com/usmanwardag/research_buddy/stargazers)
 
 
+Are you someone who frequently reads or writes a research papers. Have you ever got bogged down while searching for the citation? Moving back and forth between the pages and the citation section, and then searching for those papers with the DOI. Too much of work right? 
+
+
+![Alt Text](https://media.giphy.com/media/oirLISmToyoeI/giphy.gif?cid=ecf05e47dlrdgathxxv740g1jekiz6zdq9ycppxzdd4dyvo0&rid=giphy.gif&ct=g)
+
+Ahh! So cliche.
+
+If Yes, then this tool is gonna make your life simple!
+
+Double clicking any word will give you the top 5 citations, youtube links, google scholar links, github links. If you are not sure what an abbreviated word means in the paper, this tool also provides you its meaning from wikipedia, udemy and coursera links.
+
 To Add our extension:
 
  - Clone the repository: 
