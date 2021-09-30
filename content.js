@@ -32,7 +32,10 @@ document.addEventListener(
 	false
 );
 
-// move the bubble to cursor location and make it visible
+// 
+/**
+ * move the bubble to cursor location and make it visible
+*/
 function showBubble(mouseX, mouseY, html) {
 	bubbleDOM.innerHTML = html;
 	bubbleDOM.style.top = document.documentElement.scrollTop + mouseY + 'px';
