@@ -22,7 +22,7 @@
   "homepage": "https://github.com/usmanwardag/research_buddy#readme",
   "devDependencies": {
     "jsdoc": "^3.6.7"
-  }
+  },
   "doc": "jsdoc -d docs --configure jsconf.json main.js"
 
 }
