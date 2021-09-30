@@ -42,13 +42,15 @@ async function searchWikipedia(searchQuery) {
 }
 
 /**
-* This function searches for function's definition. 
-* @param {string} any string. 
-* @returns {string} wikipedia summary. 
-*/
+ * 
+ * This function searches for function's definition.
+ * @param {string} input User selected word/phrase
+ * @returns {string} Definition of input picked from Wikipedia
+ */
 async function searchDefinition(input) {
 	const inputValue = input;
 	const searchQuery = inputValue.trim();
+	
 	try {
 		const results = await searchWikipedia(searchQuery);
 
@@ -77,9 +79,15 @@ async function searchDefinition(input) {
 	}
 }
 
+/**
+ * This function returns the top 5 related Research Articles DOI
+ * @param {string} input User selected word/phrase
+ * @returns {string} Top 5 related Research articles DOI
+ */
 async function searchPapers(input) {
 	const inputValue = input;
 	const searchQuery = inputValue.trim();
+	
 	try {
 		// Cross-ref API
 		// (https://www.crossref.org/documentation/retrieve-metadata/rest-api)
@@ -111,10 +119,16 @@ async function searchPapers(input) {
 //searchDefinition('Fourier Transform');
 //searchPapers('SpotFi: Decimeter Level Localization Using WiFi');
 
+/**
+ * This function returns the Top 5 Youtube Videos
+ * @param {string} input User selected word/phrase
+ * @returns {string} Top 5 related Youtube Videos
+ */
 async function searchVideos(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
+		
 		const youtubeEndpoint = `https://www.googleapis.com/youtube/v3/search?part=snippet&amp;q=${searchQuery}&amp;type=video&amp;maxResults=5&amp;key=AIzaSyDN8OtSuFAFELEIzp8o1Rsokm957WJV_NE`;
 		const response = await fetch(youtubeEndpoint);
 		const json = await response.json();
@@ -138,11 +152,18 @@ async function searchVideos(input) {
 		return '';
 	}
 }
-async function searchInGit(input) {
+
+/**
+ * This function returns the related Github search results
+ * @param {string} input User selected word/phrase
+ * @returns {string} Related Github search results
+ */
+function searchInGit(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
-		const git_links = `https://github.com/search?q=${searchQuery}`;
+		const new_query= searchQuery.replace(" ", "+")
+		const git_links = `https://github.com/search?q=${new_query}`;
 		console.log(git_links);
 		return git_links;
 	} catch (error) {
@@ -153,13 +174,61 @@ async function searchInGit(input) {
 	}
 }
 
-async function googleScholarSearch(input) {
+/**
+ * This function returns the related GoogleScholar search results
+ * @param {string} input User selected word/phrase
+ * @returns {string} Related GoogleScholar search results
+ */
+async function searchGoogleScholar(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
-		const gs_link = `https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C34&amp;q=${searchQuery}&amp;btnG=`;
+		const new_query= searchQuery.replace(" ", "+")
+		const gs_link = `https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C34&amp;q=${new_query}&amp;btnG=`;
 		console.log(gs_link);
 		return gs_link;
+	} catch (error) {
+		console.log('Error');
+		console.log(err);
+
+		return '';
+	}
+}
+
+/**
+ * This function returns the related Coursera search results
+ * @param {string} input User selected word/phrase
+ * @returns {string} Related Coursera search results
+ */
+async function searchCoursera(input) {
+	try {
+		const inputValue = input;
+		const searchQuery = inputValue.trim();
+		const new_query= searchQuery.replace(" ", "+")
+		const coursera_link = `https://www.coursera.org/search?query=${new_query}`;
+		console.log(coursera_link);
+		return coursera_link;
+	} catch (error) {
+		console.log('Error');
+		console.log(err);
+
+		return '';
+	}
+}
+
+/**
+ * This function returns the related Udemy search results
+ * @param {string} input User selected word/phrase
+ * @returns {string} Related Udemy search results
+ */
+async function searchUdemy(input) {
+	try {
+		const inputValue = input;
+		const searchQuery = inputValue.trim();
+		const new_query= searchQuery.replace(" ", "+")
+		const udemy_link = `https://www.udemy.com/courses/search/?src=ukw&amp;q=${new_query}`;
+		console.log(udemy_link);
+		return udemy_link;
 	} catch (error) {
 		console.log('Error');
 		console.log(err);
@@ -177,13 +246,13 @@ async function googleScholarSearch(input) {
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#searchDefinition">searchDefinition</a></li><li><a href="global.html#searchWikipedia">searchWikipedia</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#searchCoursera">searchCoursera</a></li><li><a href="global.html#searchDefinition">searchDefinition</a></li><li><a href="global.html#searchGoogleScholar">searchGoogleScholar</a></li><li><a href="global.html#searchInGit">searchInGit</a></li><li><a href="global.html#searchPapers">searchPapers</a></li><li><a href="global.html#searchUdemy">searchUdemy</a></li><li><a href="global.html#searchVideos">searchVideos</a></li><li><a href="global.html#searchWikipedia">searchWikipedia</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Thu Sep 30 2021 12:03:11 GMT-0400 (Eastern Daylight Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Thu Sep 30 2021 15:57:02 GMT-0400 (Eastern Daylight Time)
 </footer>
 
 <script> prettyPrint(); </script>
