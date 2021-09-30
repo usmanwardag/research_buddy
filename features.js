@@ -51,6 +51,11 @@ async function searchDefinition(input) {
 	}
 }
 
+/**
+ * This function returns the top 5 related Research Articles
+ * @param {string} input User selected word/phrase
+ * @returns {string} Top 5 related Research articles
+ */
 async function searchPapers(input) {
 	const inputValue = input;
 	const searchQuery = inputValue.trim();
