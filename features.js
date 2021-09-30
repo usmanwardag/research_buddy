@@ -124,7 +124,13 @@ async function searchVideos(input) {
 		return '';
 	}
 }
-async function searchInGit(input) {
+
+/**
+ * This function returns the related Github search results
+ * @param {string} input User selected word/phrase
+ * @returns {string} Related Github search results
+ */
+function searchInGit(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
@@ -140,7 +146,12 @@ async function searchInGit(input) {
 	}
 }
 
-async function googleScholarSearch(input) {
+/**
+ * This function returns the related GoogleScholar search results
+ * @param {string} input User selected word/phrase
+ * @returns {string} Related GoogleScholar search results
+ */
+async function searchGoogleScholar(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
