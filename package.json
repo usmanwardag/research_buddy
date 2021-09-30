@@ -1,0 +1,28 @@
+{
+  "name": "research_buddy",
+  "version": "1.0.0",
+  "description": "Research Buddy",
+  "main": "Gruntfile.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usmanwardag/research_buddy.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/usmanwardag/research_buddy/issues"
+  },
+  "homepage": "https://github.com/usmanwardag/research_buddy#readme",
+  "devDependencies": {
+    "jsdoc": "^3.6.7"
+  }
+  "doc": "jsdoc -d docs --configure jsconf.json main.js"
+
+}
