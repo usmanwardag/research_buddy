@@ -1,0 +1,13 @@
+.popup {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: solid 1px;
+	border-radius: 4px;
+	box-shadow: 0 0 20px;
+	padding: 9px;
+	display: block;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e6e6e6));
+	z-index: 1000;
+}
