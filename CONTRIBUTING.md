@@ -3,7 +3,7 @@
 
 # **Contributing to Research Buddy** 👍
 
-Thank you so much for taking an interest in contributing! We are looking forward to contributions that will enable lesser human intervention!! There are many ways to contribute to this project!
+Thank you so much for taking an interest in contributing! We are delighted when people want to contribute to Research Buddy! There are many ways to contribute to this project! 
 
 ## **How Can I Contribute?** 🤔 :
 
@@ -15,7 +15,7 @@ This section guides you through submitting a bug report for this repository. Fol
 Before creating bug reports, please perform a cursory search to see if the problem has already been reported. If it has and the issue is still open, add a comment to the existing issue instead of opening a new one.
 Note: If you find a Closed issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
 
-### **How Do I Submit A (Good) Bug Report?**
+### **How Do I Submit A (Good) Bug Report?** ❔
 
 Bugs are tracked as GitHub issues. After you've determined which repository your bug is related to, create an issue on that repository and provide the following information by filling in the template.
 Explain the problem and include additional details to help a developer reproduce the problem:
@@ -27,7 +27,7 @@ Explain the problem and include additional details to help a developer reproduce
 *	If the problem is related to performance or memory, include details of the errors encountered with your report.
 *	Can you reliably reproduce the issue? If not, provide details about how often the problem happens and under which conditions it normally happens.
 
-### **Suggesting Enhancements and new features**
+### **Suggesting Enhancements and new features** 
 
 This section guides you through submitting an enhancement suggestion for this project:
 
