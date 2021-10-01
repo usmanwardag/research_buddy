@@ -61,43 +61,43 @@
 | Question 8.1: Is your software cross-platform compatible? |  |  |
 | Question 9.1: Does your software adhere to appropriate accessibility conventions or standards? |  |  |
 | Question 9.2: Does your documentation adhere to appropriate accessibility conventions or standards? |  |  |
-| Question 10.1: Is your source code stored in a repository under revision control? |  |  |
-| Question 10.2: Is each source code release a snapshot of the repository? |  |  |
-| Question 10.3: Are releases tagged in the repository? |  |  |
-| Question 10.4: Is there a branch of the repository that is always stable? (i.e. tests always pass, code always builds successfully) |  |  |
-| Question 10.5: Do you back-up your repository? |  |  |
-| Question 11.1: Do you provide publicly-available instructions for building your software from the source code? |  |  |
-| Question 11.2: Can you build, or package, your software using an automated tool? |  |  |
-| Question 11.3: Do you provide publicly-available instructions for deploying your software? |  |  |
-| Question 11.4: Does your documentation list all third-party dependencies? |  |  |
-| Question 11.5: Does your documentation list the version number for all third-party dependencies? |  |  |
-| Question 11.6: Does your software list the web address, and licences for all third-party dependencies and say whether the dependencies are mandatory or optional? |  |  |
-| Question 11.7: Can you download dependencies using a dependency management tool or package manager? |  |  |
-| Question 11.8: Do you have tests that can be run after your software has been built or deployed to show whether the build or deployment has been successful? |  |  |
-| Question 12.1: Do you have an automated test suite for your software? |  |  |
-| Question 12.2: Do you have a framework to periodically (e.g. nightly) run your tests on the latest version of the source code? |  |  |
-| Question 12.3: Do you use continuous integration, automatically running tests whenever changes are made to your source code? |  |  |
-| Question 12.4: Are your test results publicly visible? |  |  |
-| Question 12.5: Are all manually-run tests documented? |  |  |
-| Question 13.1: Does your project have resources (e.g. blog, Twitter, RSS feed, Facebook page, wiki, mailing list) that are regularly updated with information about your software? |  |  |
-| Question 13.2: Does your website state how many projects and users are associated with your project? |  |  |
-| Question 13.3: Do you provide success stories on your website? |  |  |
-| Question 13.4: Do you list your important partners and collaborators on your website? |  |  |
-| Question 13.5: Do you list your project's publications on your website or link to a resource where these are available? |  |  |
-| Question 13.6: Do you list third-party publications that refer to your software on your website or link to a resource where these are available? |  |  |
-| Question 13.7: Can users subscribe to notifications to changes to your source code repository? |  |  |
-| Question 13.8: If your software is developed as an open source project (and, not just a project developing open source software), do you have a governance model? | Yes |  |
+| Question 10.1: Is your source code stored in a repository under revision control? | Yes | Github |
+| Question 10.2: Is each source code release a snapshot of the repository? | Yes |  |
+| Question 10.3: Are releases tagged in the repository? | Yes | V0.5 and V1.0 |
+| Question 10.4: Is there a branch of the repository that is always stable? (i.e. tests always pass, code always builds successfully) | Yes | stable branch |
+| Question 10.5: Do you back-up your repository? | Yes | Github |
+| Question 11.1: Do you provide publicly-available instructions for building your software from the source code? | Yes | Readme |
+| Question 11.2: Can you build, or package, your software using an automated tool? | Yes |  |
+| Question 11.3: Do you provide publicly-available instructions for deploying your software? | Yes | In readme |
+| Question 11.4: Does your documentation list all third-party dependencies? | Yes | No third party dependencies |
+| Question 11.5: Does your documentation list the version number for all third-party dependencies? | Yes | No third party dependencies |
+| Question 11.6: Does your software list the web address, and licences for all third-party dependencies and say whether the dependencies are mandatory or optional? | Yes | No mandatory dependencies |
+| Question 11.7: Can you download dependencies using a dependency management tool or package manager? | Yes | Run directly as chrome extension |
+| Question 11.8: Do you have tests that can be run after your software has been built or deployed to show whether the build or deployment has been successful? | Yes | Travis |
+| Question 12.1: Do you have an automated test suite for your software? | Yes | Written with Travis and Gruntle |
+| Question 12.2: Do you have a framework to periodically (e.g. nightly) run your tests on the latest version of the source code? | Yes | Travis updates on every commit |
+| Question 12.3: Do you use continuous integration, automatically running tests whenever changes are made to your source code? | Yes | Travis and Travis build status on the readme |
+| Question 12.4: Are your test results publicly visible? | Yes | With travis |
+| Question 12.5: Are all manually-run tests documented? | Yes | Commented in test folder |
+| Question 13.1: Does your project have resources (e.g. blog, Twitter, RSS feed, Facebook page, wiki, mailing list) that are regularly updated with information about your software? | Yes | Github Wiki page and twitter |
+| Question 13.2: Does your website state how many projects and users are associated with your project? | Yes | Collaborators |
+| Question 13.3: Do you provide success stories on your website? | Yes | Video of successfully using the app |
+| Question 13.4: Do you list your important partners and collaborators on your website? | Yes | Included in readme |
+| Question 13.5: Do you list your project's publications on your website or link to a resource where these are available? | Yes | Zenodo |
+| Question 13.6: Do you list third-party publications that refer to your software on your website or link to a resource where these are available? | Yes | None as of now |
+| Question 13.7: Can users subscribe to notifications to changes to your source code repository? | Yes | By selecting watch on github repo |
+| Question 13.8: If your software is developed as an open source project (and, not just a project developing open source software), do you have a governance model? | Yes | Yes, we have a representative and have open discussions |
 | Question 14.1: Do you accept contributions (e.g. bug fixes, enhancements, documentation updates, tutorials) from people who are not part of your project? | Yes |  |
-| Question 14.2: Do you have a contributions policy? | Yes |  |
-| Question 14.3: Is your contributions' policy publicly available? | Yes |  |
+| Question 14.2: Do you have a contributions policy? | Yes | In contributing.md |
+| Question 14.3: Is your contributions' policy publicly available? | Yes | Contributing.md |
 | Question 14.4: Do contributors keep the copyright/IP of their contributions? | No |  |
-| Question 15.1: Does your website and documentation clearly state the copyright owners of your software and documentation? | No |  |
-| Question 15.2: Does each of your source code files include a copyright statement? | No |  |
+| Question 15.1: Does your website and documentation clearly state the copyright owners of your software and documentation? | Yes |  |
+| Question 15.2: Does each of your source code files include a copyright statement? | Yes |  |
 | Question 15.3: Does your website and documentation clearly state the licence of your software? | Yes |  |
-| Question 15.4: Is your software released under an open source licence? | Yes |  |
-| Question 15.5: Is your software released under an OSI-approved open-source licence? | Yes |  |
-| Question 15.6: Does each of your source code files include a licence header? | No |  |
-| Question 15.7: Do you have a recommended citation for your software? | Yes |  |
-| Question 16.1: Does your website or documentation include a project roadmap (a list of project and development milestones for the next 3, 6 and 12 months)? | Yes |  |
-| Question 16.2: Does your website or documentation describe how your project is funded, and the period over which funding is guaranteed? | NA |  |
-| Question 16.3: Do you make timely announcements of the deprecation of components, APIs, etc.? | Yes |  |
+| Question 15.4: Is your software released under an open source licence? | Yes | MIT |
+| Question 15.5: Is your software released under an OSI-approved open-source licence? | Yes | MIT |
+| Question 15.6: Does each of your source code files include a licence header? | Yes |  |
+| Question 15.7: Do you have a recommended citation for your software? | Yes | https://zenodo.org/record/5542634#.YVaCaXVKiRw |
+| Question 16.1: Does your website or documentation include a project roadmap (a list of project and development milestones for the next 3, 6 and 12 months)? | Yes | Included in readme |
+| Question 16.2: Does your website or documentation describe how your project is funded, and the period over which funding is guaranteed? | NA | NA |
+| Question 16.3: Do you make timely announcements of the deprecation of components, APIs, etc.? | Yes | We had version 0.5 that we upgraded to v1.0. |
