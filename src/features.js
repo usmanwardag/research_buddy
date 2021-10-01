@@ -44,7 +44,7 @@ async function searchDefinition(input) {
 
 		console.log('Summary');
 		console.log(summary);
-		return summary, pageurl;
+		return [summary, pageurl];
 
 	} catch (err) {
 		console.log('Error');
