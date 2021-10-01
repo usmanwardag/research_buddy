@@ -20,7 +20,7 @@ Ahh! So cliche.
 
 If Yes, then this tool is going to make your life simple!
 
-Double clicking any text will give you a bubble popup displaying the top 5 citations, youtube links, google scholar links, and github links. If you are unsure what an abbreviated word means in the paper, this tool also provides you its meaning from wikipedia and also provides udemy and coursera links. You get everything in the bubble popup.
+Double clicking any text will give you a bubble popup displaying the top 5 citations, youtube links, google scholar links, and github links. You can highlight any term, and this tool will provide you its meaning from wikipedia and also provides udemy and coursera links. You get everything in the bubble popup.
 
 ![Alt Text](https://media.giphy.com/media/YVmL3uMI8IobhU6KD7/giphy.gif)
 
@@ -34,6 +34,23 @@ Double clicking any text will give you a bubble popup displaying the top 5 citat
  - Select your directory where you have cloned the repo
  - You should be able to see our extension loaded in your Google Chrome!
 
+
 ## How to Contribute?
   
  We would be happy to receive contributions! If you'd like to, please go through our [CONTRIBUTING.md](https://github.com/usmanwardag/research_buddy/blob/main/CONTRIBUTING.md)
+ 
+ ## Future Scope
+  - Implement this tool for PDFs.
+  - Show abstract of cited papers in the popup.
+  - If a reader highlights a citation, all other instances of the same citation should be highlighted inside a research paper PDF.
+  - Improve features and make the tool more user friendly.
+  
+ ## Contact
+
+* [Kriti Khullar](https://github.com/kriti0207)
+* [Muskan Gupta](https://github.com/muskan7828)
+* [Suneha Bose](https://github.com/sbosenc)
+* [Urvashi Kar](https://github.com/Urvashi74)
+* [Usman Mahmood Khan](https://github.com/usmanwardag)
+
+ 
