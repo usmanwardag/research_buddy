@@ -36,6 +36,13 @@ function testSearchDefinition(){
         throw "Length is zero"
       }
   })
+  searchPapers('Indoor Maps').then(papers => {
+    if(papers.length==0)
+      {
+        throw "Length is zero"
+      }
+
+  })
 }
 
 testSearchPapers();
