@@ -34,6 +34,10 @@ Double clicking on any text will give you a popup displaying the definition pick
  - Select your directory where you have cloned the repo
  - You should be able to see our extension loaded in your Google Chrome!
 
+## CODE Documentation
+
+You can find our Code documentaion for each method implemented over [here](https://github.com/usmanwardag/research_buddy/blob/main/out/index.html)
+
 
 ## How to Contribute?
   
