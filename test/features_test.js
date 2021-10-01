@@ -34,10 +34,21 @@ function testSearchVideos(){
       }
 
   })
+}
+
+
+function testSearchInGit(){
+  searchInGit('Research').then(gitlink => {
+    if(gitlink.length==0)
+      {
+        throw "Video not found"
+      }
+
+  })
 
 
 }
-
 testSearchPapers();
 testSearchDefinition()
 testSearchVideos()
+testSearchInGit()
