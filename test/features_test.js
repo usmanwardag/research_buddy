@@ -17,10 +17,20 @@ function testSearchPapers(){
 }
 
 function testSearchDefinition(){
-  searchDefinition('Maps').then(papers => {
-    if(papers.length==0)
+  searchDefinition('Maps').then(definition => {
+    if(definition.length==0)
       {
         throw "Definition not found"
+      }
+
+  })
+}
+
+function testSearchVideos(){
+  searchVideos('Maps').then(videos => {
+    if(videos.length==0)
+      {
+        throw "Video not found"
       }
 
   })
@@ -30,3 +40,4 @@ function testSearchDefinition(){
 
 testSearchPapers();
 testSearchDefinition()
+testSearchVideos()
