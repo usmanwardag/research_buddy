@@ -3,11 +3,11 @@
 | Notes                                                                                                       | Total :         | Evidence  |    
 |---                                                                                                          |---              |---|
 | workload is spread over the whole team (one team member is often Xtimes more productive than the others...	|                            
-|but nevertheless, here is a track record that everyone is contributing a lot)	                              |  https://github.com/usmanwardag/research_buddy/pulse             
-|Number of commits	                                                                                          |  https://github.com/usmanwardag/research_buddy/pulse
-|Number of commits: by different people	                                                                        |https://github.com/usmanwardag/research_buddy/pulse
-|Issues reports: there are many	
-|issues are being closed	evidence                                                                              | |in GH
+|but nevertheless, here is a track record that everyone is contributing a lot)	                              |  |[Commit Insights](https://github.com/usmanwardag/research_buddy/pulse)            
+|Number of commits	                                                                                          |  |[Commit Count](https://github.com/usmanwardag/research_buddy/pulse)
+|Number of commits: by different people	                                                                       | |[Commit per person](https://github.com/usmanwardag/research_buddy/pulse)
+|Issues reports: there are many	                                                                              |  |[Research Buddy Issues](https://github.com/usmanwardag/research_buddy/issues?q=is%3Aissue+is%3Aclosed)
+|issues are being closed	evidence                                                                              | |[Closed Issues](https://github.com/usmanwardag/research_buddy/issues?q=is%3Aissue+is%3Aclosed)
 |DOI badge: exists	                                                                                            | |in GH
 |Docs: doco generated , format not ugly	                                                                        | |in GH
 |Docs: what: point descriptions of each class/function (in isolation)	
@@ -15,7 +15,7 @@
 |Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing	
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.	
 |Use of version control tools	
-|Use of style checkers	config files                                                                            | |in GH showing your config
+|Use of style checkers	config files                                                                            | |[.prettierrc.json](https://github.com/usmanwardag/research_buddy/blob/main/.prettierrc.json)
 |Use of code formatters.	config files                                                                          | |in GH showing your this formatter's config
 |Use of syntax checkers.	config files                                                                          | |in GH showing this checker's config
 |Use of code coverage	config files                                                                              | |in GH
