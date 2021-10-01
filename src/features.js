@@ -1,4 +1,8 @@
-/**
+/*
+ * Copyright (c) 2021 Research Buddy
+ */
+
+/*
 * This function searches Wikipdia. 
 * @param {string} any string. 
 * @returns {string} json response. 
@@ -40,12 +44,7 @@ async function searchDefinition(input) {
 
 		summary = summary_json.query.pages[pageid].extract;
 		summary = summary.split('.');
-		if(String(summary[0]).includes("undefined")){
-			summary[0] = "No definition found!";
-		}
-		console.log(summary[0]);
 		summary = summary[0] + '. ' + summary[1] + '.';
-
 
 		console.log('Summary');
 		console.log(summary);
@@ -76,18 +75,18 @@ async function searchPapers(input) {
 		const response = await fetch(url);
 		const json = await response.json();
 
+		//console.log(json);
+
 		var links = [];
-		
 
-		for (let i = 0; i < Math.min(5,json.message.items.length); i++) {
-
+		for (let i = 0; i < 5; i++) {
 			link = json.message.items[i].URL;
 			links.push(link);
 		}
 
 		console.log(links);
 
-		return links;
+		return link;
 	} catch (err) {
 		console.log('Error');
 		console.log(err);
@@ -143,7 +142,7 @@ async function searchVideos(input) {
  * @param {string} input User selected word/phrase
  * @returns {string} Related Github search results
  */
-async function searchInGit(input) {
+function searchInGit(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();

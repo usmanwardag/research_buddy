@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2021 Research Buddy
+ */
+
 // add an invisible bubble element to the top of the page using <div>
 let bubbleDOM = document.createElement('div');
 bubbleDOM.setAttribute('class', 'popup');

@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2021 Research Buddy
+ */
+
 function testSearchPapers() {
 	throw 'errors in search paper';
 	searchPapers('Indoor Maps').then(papers => {
