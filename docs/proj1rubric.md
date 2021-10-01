@@ -19,11 +19,11 @@
 |Use of code formatters.	config files                                                                          |3 |[.prettierrc.json](https://github.com/usmanwardag/research_buddy/blob/main/.prettierrc.json)
 |Use of syntax checkers.	config files                                                                          |3 |in GH showing this checker's config
 |Use of code coverage	config files                                                                              |3 |in GH
-|other automated analysis tools	config files                                                                    | |in GH
-|test cases exist	                                                                                              | |dozens of tests and those test cases are more than 30% of the code base
-|test cases are routinely executed	                                                                            | |e.g. travis-com.com or github actions or something
-|the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up	
-|issues are discussed before they are closed	| | Our Issues were mostly discussed in person or on Whatsapp chats
+|other automated analysis tools	config files                                                                    |3 |Travis, Gruntle
+|test cases exist	                                                                                              | 3|dozens of tests and those test cases are more than 30% of the code base
+|test cases are routinely executed	                                                                            | 3|travis-com.com 
+|the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up	|3| Guidelines in contributing.md
+|issues are discussed before they are closed	|3 | Extensive discussion in github issues + Our Issues were also discussed in person or on Whatsapp chats
 |Chat channel: exists	
 |test cases:.a large proportion of the issues related to handling failing cases.	|if a test case fails, open an issue and fix it
 |evidence that the whole team is using the same tools: everyone can get to all tools and files	                | |Everyone is using the same tools like Visual Studio Code for editing code files
