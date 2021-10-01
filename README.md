@@ -11,10 +11,6 @@
 [![GitHub stars](https://img.shields.io/github/stars/usmanwardag/research_buddy)](https://github.com/usmanwardag/research_buddy/stargazers)
 
 
-[Check out the video!](https://www.youtube.com/watch?v=tnL-BqQak-4)
-
-[![Research Buddy](http://i3.ytimg.com/vi/tnL-BqQak-4/maxresdefault.jpg)](https://www.youtube.com/watch?v=tnL-BqQak-4)
-
 Are you someone who frequently reads or writes research papers/articles on the web? Do you get exhausted while searching for the citations? Moving back and forth between the pages and the citation section, and then searching for those papers with the DOI. Or while reading a paper you come across some terminology that you don't know about and start Googling to understand what is being talked about! Too much of work right?!
 
 
@@ -25,6 +21,10 @@ I'm sure you've come across this situation at some point! Research Buddy is here
 
 Double clicking on any text will give you a popup displaying the definition picked up from Wikipedia, the top 5 Paper citations, youtube links, google scholar links, and github links. You can highlight any term, and this tool will provide you the Wikipedia definition with a link to the page, and links pointing to the top 5 related papers as well as the search results from Youtube, Github, Udemy, Google Scholar and Coursera. You get everything in the bubble popup as seen below!
 
+
+[Check out the video!](https://www.youtube.com/watch?v=tnL-BqQak-4)
+
+[![Research Buddy](http://i3.ytimg.com/vi/tnL-BqQak-4/maxresdefault.jpg)](https://www.youtube.com/watch?v=tnL-BqQak-4)
 
 ## Installation
 
