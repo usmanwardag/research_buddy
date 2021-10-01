@@ -23,7 +23,7 @@ If Yes, then this tool is going to make your life simple!
 
 Double clicking any text will give you a bubble popup displaying the top 5 citations, youtube links, google scholar links, and github links. You can highlight any term, and this tool will provide you its meaning from wikipedia and also provides udemy and coursera links. You get everything in the bubble popup.
 
-![Alt Text](https://media.giphy.com/media/YVmL3uMI8IobhU6KD7/giphy.gif)
+![alt text](Screenshot1.png)
 
 ## Installation
 
