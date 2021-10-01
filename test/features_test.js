@@ -1,49 +1,43 @@
 
 function testSearchPapers(){
-  searchPapers('There').then(papers => {
-      if(papers.length==0)
-      {
-        throw "Length is zero"
-      }
-  })
   searchPapers('Indoor Maps').then(papers => {
         if(papers.length==0)
           {
-            throw "Length is zero"
+            throw "Related papers not found"
           }
     
-  })
-  searchPapers('').then(papers => {
-        if(papers.length==0)
-          {
-            throw "Length is zero"
-          }
-        
   })
   searchPapers('SE project Research Buddy').then(papers => {
         if(papers.length==0)
           {
-            throw "Length is zero"
+            throw "Related Papers not found"
           }
         
   })
 }
 
 function testSearchDefinition(){
-  searchDefinition('There').then(papers => {
-      if(papers.length==0)
+  searchDefinition('Maps').then(definition => {
+    if(definition.length==0)
       {
-        throw "Length is zero"
-      }
-  })
-  searchPapers('Indoor Maps').then(papers => {
-    if(papers.length==0)
-      {
-        throw "Length is zero"
+        throw "Definition not found"
       }
 
   })
 }
 
+function testSearchVideos(){
+  searchVideos('Maps').then(videos => {
+    if(videos.length==0)
+      {
+        throw "Video not found"
+      }
+
+  })
+
+
+}
+
 testSearchPapers();
 testSearchDefinition()
+testSearchVideos()
