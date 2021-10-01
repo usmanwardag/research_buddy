@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
         coveralls: {
           options: {
             force: false
@@ -21,5 +22,5 @@ module.exports = function(grunt) {
 
 
     // Task to run tests
-    grunt.registerTask('test', 'qunit');
+    grunt.registerTask('default', ['qunit']);
 };
