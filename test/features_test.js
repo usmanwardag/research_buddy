@@ -1,20 +1,49 @@
 
-
 function testSearchPapers(){
-  console.log('SearchPapers test');
-
   searchPapers('There').then(papers => {
-      console.log(papers);
-      throw "error";
-      console.log(papers.length)
-      
+      if(papers.length==0)
+      {
+        throw "Length is zero"
+      }
   })
   searchPapers('Indoor Maps').then(papers => {
-    console.log(papers);
-    console.log(papers.length)
-})
-  
+        if(papers.length==0)
+          {
+            throw "Length is zero"
+          }
+    
+  })
+  searchPapers('').then(papers => {
+        if(papers.length==0)
+          {
+            throw "Length is zero"
+          }
+        
+  })
+  searchPapers('SE project Research Buddy').then(papers => {
+        if(papers.length==0)
+          {
+            throw "Length is zero"
+          }
+        
+  })
 }
 
+function testSearchDefinition(){
+  searchDefinition('There').then(papers => {
+      if(papers.length==0)
+      {
+        throw "Length is zero"
+      }
+  })
+  searchPapers('Indoor Maps').then(papers => {
+    if(papers.length==0)
+      {
+        throw "Length is zero"
+      }
 
-testSearchPapers()
+  })
+}
+
+testSearchPapers();
+testSearchDefinition()
