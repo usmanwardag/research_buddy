@@ -60,9 +60,19 @@ function testSearchGoogleScholar(){
 
 function testSearchCoursera(){
   searchCoursera('Research').then(courseralink => {
-    if(scholarlink.length==0)
+    if(courseralink.length==0)
       {
-        throw "Google scholar link not found"
+        throw "Coursera link not found"
+      }
+
+  })
+}
+
+function testSearchUdemy(){
+  searchUdemy('Tutorial').then(udemylink => {
+    if(udemylink.length==0)
+      {
+        throw "Udemy link not found"
       }
 
   })
@@ -74,4 +84,5 @@ testSearchDefinition();
 testSearchVideos();
 testSearchInGit();
 testSearchGoogleScholar();
-testSearchCoursera()
+testSearchCoursera();
+testSearchUdemy()
