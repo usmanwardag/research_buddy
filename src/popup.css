@@ -11,4 +11,11 @@
 	/*background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e6e6e6));*/
 	background-color: white;
 	z-index: 1000;
+	width: 450px;
+	align-items: center;
+	font-family: Monaco, monospace;
+	font-size: 14px;
+	letter-spacing: -.3px;
+	align-content: center;
+	text-align: center;
 }
