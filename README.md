@@ -21,7 +21,7 @@ I'm sure you've come across this situation at some point! Research Buddy is here
 
 Double clicking on any text will give you a popup displaying the definition picked up from Wikipedia, the top 5 Paper citations, youtube links, google scholar links, and github links. You can highlight any term, and this tool will provide you the Wikipedia definition with a link to the page, and links pointing to the top 5 related papers as well as the search results from Youtube, Github, Udemy, Google Scholar and Coursera. You get everything in the bubble popup as seen below!
 
-![alt text](Image1.jpeg)
+![alt text](Image1.png)
 
 ## Installation
 
@@ -38,7 +38,7 @@ Double clicking on any text will give you a popup displaying the definition pick
   
  We would be happy to receive contributions! If you'd like to, please go through our [CONTRIBUTING.md](https://github.com/usmanwardag/research_buddy/blob/main/CONTRIBUTING.md)
  
- ## Future Scope
+ ## Future Steps 
   - Implement this tool for PDFs.
   - Show abstract of cited papers in the popup.
   - If a reader highlights a citation, all other instances of the same citation should be highlighted inside a research paper PDF.
