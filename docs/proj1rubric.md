@@ -3,10 +3,10 @@
 | Notes                                                                                                       | Total :         | Evidence  |    
 |---                                                                                                          |---              |---|
 | workload is spread over the whole team (one team member is often Xtimes more productive than the others...	|                            
-|but nevertheless, here is a track record that everyone is contributing a lot)	                              |  [Commit Insights](https://github.com/usmanwardag/research_buddy/pulse)            
-|Number of commits	                                                                                          |  [Commit Count](https://github.com/usmanwardag/research_buddy/pulse)
-|Number of commits: by different people	                                                                        |[Commit per person](https://github.com/usmanwardag/research_buddy/pulse)
-|Issues reports: there are many	                                                                                |[Research Buddy Issues](https://github.com/usmanwardag/research_buddy/issues?q=is%3Aissue+is%3Aclosed)
+|but nevertheless, here is a track record that everyone is contributing a lot)	                              |  |[Commit Insights](https://github.com/usmanwardag/research_buddy/pulse)            
+|Number of commits	                                                                                          |  |[Commit Count](https://github.com/usmanwardag/research_buddy/pulse)
+|Number of commits: by different people	                                                                       | |[Commit per person](https://github.com/usmanwardag/research_buddy/pulse)
+|Issues reports: there are many	                                                                              |  |[Research Buddy Issues](https://github.com/usmanwardag/research_buddy/issues?q=is%3Aissue+is%3Aclosed)
 |issues are being closed	evidence                                                                              | |[Closed Issues](https://github.com/usmanwardag/research_buddy/issues?q=is%3Aissue+is%3Aclosed)
 |DOI badge: exists	                                                                                            | |in GH
 |Docs: doco generated , format not ugly	                                                                        | |in GH
