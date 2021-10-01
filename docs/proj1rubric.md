@@ -2,7 +2,7 @@
 
 | Notes                                                                                                       | Total :         | Evidence  |    
 |---                                                                                                          |:---:              |---|
-| workload is spread over the whole team (one team member is often Xtimes more productive than the others...	|                            
+| workload is spread over the whole team (one team member is often Xtimes more productive than the others...	| 3 | Minimum of 21 commits by each member.                           
 |but nevertheless, here is a track record that everyone is contributing a lot)	                              | 3 |[Commit Insights](https://github.com/usmanwardag/research_buddy/pulse)            
 |Number of commits	                                                                                          | 3 |[Commit Count](https://github.com/usmanwardag/research_buddy/pulse)
 |Number of commits: by different people	                                                                      | 3|[Commit per person](https://github.com/usmanwardag/research_buddy/pulse)
@@ -10,11 +10,11 @@
 |issues are being closed	evidence                                                                              | 3|[Closed Issues](https://github.com/usmanwardag/research_buddy/issues?q=is%3Aissue+is%3Aclosed)
 |DOI badge: exists	                                                                                            | 3|in GH
 |Docs: doco generated , format not ugly	                                                                        |3 |in GH
-|Docs: what: point descriptions of each class/function (in isolation)	
-|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z	              |3 |doc page entries
-|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing	
-|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.	
-|Use of version control tools	
+|Docs: what: point descriptions of each class/function (in isolation)	                              |3| Defined and documented through jsdco
+|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z	              |3 |doc page entries + [youtube video](https://www.youtube.com/watch?v=tnL-BqQak-4)
+|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing	 |3| Yes, animations, videos, motivation etc.
+|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.	|3| Yes, [youtube video](https://www.youtube.com/watch?v=tnL-BqQak-4)
+|Use of version control tools	          |3| Github, GIT command line
 |Use of style checkers	config files                                                                            |3 |[.prettierrc.json](https://github.com/usmanwardag/research_buddy/blob/main/.prettierrc.json)
 |Use of code formatters.	config files                                                                          |3 |[.prettierrc.json](https://github.com/usmanwardag/research_buddy/blob/main/.prettierrc.json)
 |Use of syntax checkers.	config files                                                                          |3 |in GH showing this checker's config
@@ -27,10 +27,10 @@
 |Chat channel: exists	|3| Whatsapp
 |test cases:.a large proportion of the issues related to handling failing cases.	|2| whenever test cases faile, we opened an issue and fixed it
 |evidence that the whole team is using the same tools: everyone can get to all tools and files	                |3 |Everyone is using the same tools like Visual Studio Code for editing code files, github and git command line
-|evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)	|3|
+|evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)	|3| Same travis, package, extension and grundle config files updated by everyone.
 |evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)	
 |evidence that the members of the team are working across multiple places in the code base	                    | 3|[Contributors](https://github.com/usmanwardag/research_buddy/graphs/contributors)
-|short release cycles	|(hard to see in short projects) project members are committing often enough so that everyone can get your work
+|short release cycles	| (hard to see in short projects) project members are committing often enough so that everyone can get your work
 | Question 1.1: Does your website and documentation provide a clear, high-level overview of your software? |  |  |
 | Question 1.2: Does your website and documentation clearly describe the type of user who should use your software? |  |  |
 | Question 1.3: Do you publish case studies to show how your software has been used by yourself and others? |  |  |
