@@ -65,12 +65,12 @@ function getHTML(popupInfo) {
   	p.innerHTML = "DEFINITION:"+wikiDefinition;
   	bubbleDOM.body.appendChild(p);*/
 
-	var html = `<html><body><p>${wikiDefinition} <a href=${popupInfo.wikiURL} target="_blank">Read more</a></p><br><p>Papers: `;
+	var html = `<html><body><p>${wikiDefinition} <a href=${popupInfo.wikiURL} target="_blank">Read more</a></p><p>Papers: `;
 	for (let i = 0; i < papersLength; i++) {
 		link = popupInfo.papers[i];
 		html = html.concat(`<a href=${link} target="_blank">${i + 1} </a>`);
 	}
-	html = html.concat(`</p><a href=${popupInfo.youtubeLink} target="_blank">YouTube </a>`);
+	html = html.concat(`</p><a href=${popupInfo.youtubeLink} target="_blank"><img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" width="36" height="36"></a>`);
 	html = html.concat(`<a href=${popupInfo.gitLink} target="_blank">GitHub </a>`);
 	html = html.concat(`<a href=${popupInfo.udemyLink} target="_blank">Udemy </a>`);
 	html = html.concat(`<a href=${popupInfo.scholarLink} target="_blank">Google Scholar </a>`);
