@@ -11,9 +11,6 @@ document.addEventListener(
 	e => {
 		if (getSelectedText().length > 0) {
 			text = getSelectedText();
-			/*var values = searchDefinition (text);
-			var wifkiDefinition =  values[0];
-			var wikiURL = values[1];*/
 			searchDefinition(text).then(summary => {
 				searchPapers(text).then(papers => {
 					searchVideos(text).then(youtubeLink => {
@@ -27,11 +24,11 @@ document.addEventListener(
 											wikiDefinition: summary[0],
 											wikiURL: summary[1],
 											papers: papers,
-											youtubeLink : youtubeLink,
-											gitLink : gitLink,
-											scholarLink : scholarLink,
+											youtubeLink: youtubeLink,
+											gitLink: gitLink,
+											scholarLink: scholarLink,
 											courseraLink: courseraLink,
-											udemyLink : udemyLink
+											udemyLink: udemyLink,
 										};
 										console.log('line 36');
 										showBubble(e.clientX, e.clientY, popupInfo);
@@ -42,13 +39,6 @@ document.addEventListener(
 					});
 				});
 			});
-			/*var papers = searchPapers(text);
-			var youtubeLink = searchVideos(text);
-			var gitLink = searchInGit(text);
-			var scholarLink = searchGoogleScholar(text);
-			var courseraLink = searchCoursera(text);
-			var udemyLink = searchUdemy(text);
-			showBubble(e.clientX, e.clientY, wifkiDefinition);*/
 		}
 	},
 	false
@@ -63,14 +53,14 @@ document.addEventListener(
 	false
 );
 
-function getHTML(popupInfo){
+function getHTML(popupInfo) {
 	//wikiLength = Math.min(200, popupInfo.wikiDefinition.length);
 	//console.log(wikiLength);
 	//wikiDefinition = String(popupInfo.wikiDefinition).substring(0,wikiLength);
 	wikiDefinition = popupInfo.wikiDefinition;
 	papersLength = Math.min(5, popupInfo.papers.length);
 	console.log(papersLength);
-	
+
 	/*p = document.createElement("p");
   	p.innerHTML = "DEFINITION:"+wikiDefinition;
   	bubbleDOM.body.appendChild(p);*/
@@ -78,17 +68,16 @@ function getHTML(popupInfo){
 	var html = `<html><body><p>${wikiDefinition} <a href=${popupInfo.wikiURL} target="_blank">Read more</a></p><br><p>Papers: `;
 	for (let i = 0; i < papersLength; i++) {
 		link = popupInfo.papers[i];
-		html= html.concat(`<a href=${link} target="_blank">${i+1} </a>`)
+		html = html.concat(`<a href=${link} target="_blank">${i + 1} </a>`);
 	}
 	html = html.concat(`</p><a href=${popupInfo.youtubeLink} target="_blank">YouTube </a>`);
 	html = html.concat(`<a href=${popupInfo.gitLink} target="_blank">GitHub </a>`);
 	html = html.concat(`<a href=${popupInfo.udemyLink} target="_blank">Udemy </a>`);
 	html = html.concat(`<a href=${popupInfo.scholarLink} target="_blank">Google Scholar </a>`);
 	html = html.concat(`<a href=${popupInfo.courseraLink} target="_blank">Coursera</a>`);
-	html = html.concat(`</body></html>`)
+	html = html.concat(`</body></html>`);
 	console.log(html);
 	return html;
-
 }
 
 /**
