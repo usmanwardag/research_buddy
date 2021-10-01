@@ -7,7 +7,7 @@ document.body.appendChild(bubbleDOM);
 const getSelectedText = () => window.getSelection().toString();
 
 document.addEventListener(
-	'click',
+	'mouseup',
 	e => {
 		if (getSelectedText().length > 0) {
 			text = getSelectedText();
@@ -55,18 +55,19 @@ document.addEventListener(
 );
 
 // hide the bubble when clicking on the screen
-/*document.addEventListener(
-	'mousedown',
+document.addEventListener(
+	'click',
 	e => {
 		bubbleDOM.style.visibility = 'hidden';
 	},
 	false
-);*/
+);
 
 function getHTML(popupInfo){
-	wikiLength = Math.min(200, popupInfo.wikiDefinition.length);
-	console.log(wikiLength);
-	wikiDefinition = String(popupInfo.wikiDefinition).substring(0,wikiLength);
+	//wikiLength = Math.min(200, popupInfo.wikiDefinition.length);
+	//console.log(wikiLength);
+	//wikiDefinition = String(popupInfo.wikiDefinition).substring(0,wikiLength);
+	wikiDefinition = popupInfo.wikiDefinition;
 	papersLength = Math.min(5, popupInfo.papers.length);
 	console.log(papersLength);
 	
@@ -74,16 +75,16 @@ function getHTML(popupInfo){
   	p.innerHTML = "DEFINITION:"+wikiDefinition;
   	bubbleDOM.body.appendChild(p);*/
 
-	var html = `<html><body><p>${wikiDefinition}</p><a href=${popupInfo.wikiURL} target="_blank">Read more</a><br><p>Papers: `;
+	var html = `<html><body><p>${wikiDefinition} <a href=${popupInfo.wikiURL} target="_blank">Read more</a></p><br><p>Papers: `;
 	for (let i = 0; i < papersLength; i++) {
 		link = popupInfo.papers[i];
-		html= html.concat(`<a href=${link}>${i+1} </a>`)
+		html= html.concat(`<a href=${link} target="_blank">${i+1} </a>`)
 	}
-	html = html.concat(`</p><a href=${popupInfo.youtubeLink} >YouTube </a>`);
-	html = html.concat(`<a href=${popupInfo.gitLink} >GitHub </a>`);
-	html = html.concat(`<a href=${popupInfo.udemyLink} >Udemy </a>`);
-	html = html.concat(`<a href=${popupInfo.scholarLink} >Google Scholar </a>`);
-	html = html.concat(`<a href=${popupInfo.courseraLink} >Coursera</a>`);
+	html = html.concat(`</p><a href=${popupInfo.youtubeLink} target="_blank">YouTube </a>`);
+	html = html.concat(`<a href=${popupInfo.gitLink} target="_blank">GitHub </a>`);
+	html = html.concat(`<a href=${popupInfo.udemyLink} target="_blank">Udemy </a>`);
+	html = html.concat(`<a href=${popupInfo.scholarLink} target="_blank">Google Scholar </a>`);
+	html = html.concat(`<a href=${popupInfo.courseraLink} target="_blank">Coursera</a>`);
 	html = html.concat(`</body></html>`)
 	console.log(html);
 	return html;
