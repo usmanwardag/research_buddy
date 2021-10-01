@@ -1,5 +1,6 @@
 
 function testSearchPapers(){
+  throw "errors in search paper"
   searchPapers('Indoor Maps').then(papers => {
         if(papers.length==0)
           {
@@ -57,9 +58,20 @@ function testSearchGoogleScholar(){
   })
 }
 
+function testSearchCoursera(){
+  searchCoursera('Research').then(courseralink => {
+    if(scholarlink.length==0)
+      {
+        throw "Google scholar link not found"
+      }
+
+  })
+}
+
 
 testSearchPapers();
 testSearchDefinition();
 testSearchVideos();
 testSearchInGit();
-testSearchGoogleScholar()
+testSearchGoogleScholar();
+testSearchCoursera()
