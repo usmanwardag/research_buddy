@@ -24,12 +24,12 @@
 |test cases are routinely executed	                                                                            | 3|travis-com.com 
 |the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up	|3| Guidelines in contributing.md
 |issues are discussed before they are closed	|3 | Extensive discussion in github issues + Our Issues were also discussed in person or on Whatsapp chats
-|Chat channel: exists	
-|test cases:.a large proportion of the issues related to handling failing cases.	|if a test case fails, open an issue and fix it
-|evidence that the whole team is using the same tools: everyone can get to all tools and files	                | |Everyone is using the same tools like Visual Studio Code for editing code files
-|evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)	
+|Chat channel: exists	|3| Whatsapp
+|test cases:.a large proportion of the issues related to handling failing cases.	|2| whenever test cases faile, we opened an issue and fixed it
+|evidence that the whole team is using the same tools: everyone can get to all tools and files	                |3 |Everyone is using the same tools like Visual Studio Code for editing code files, github and git command line
+|evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)	|3|
 |evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)	
-|evidence that the members of the team are working across multiple places in the code base	                    | |[Contributors](https://github.com/usmanwardag/research_buddy/graphs/contributors)
+|evidence that the members of the team are working across multiple places in the code base	                    | 3|[Contributors](https://github.com/usmanwardag/research_buddy/graphs/contributors)
 |short release cycles	|(hard to see in short projects) project members are committing often enough so that everyone can get your work
 | Question 1.1: Does your website and documentation provide a clear, high-level overview of your software? |  |  |
 | Question 1.2: Does your website and documentation clearly describe the type of user who should use your software? |  |  |
@@ -58,8 +58,8 @@
 | Question 6.2: Does your software use an accepted coding standard or convention? |  |  |
 | Question 7.1: Does your software allow data to be imported and exported using open data formats? |  |  |
 | Question 7.2: Does your software allow communications using open communications protocols? |  |  |
-| Question 8.1: Is your software cross-platform compatible? |  |  |
-| Question 9.1: Does your software adhere to appropriate accessibility conventions or standards? |  |  |
+| Question 8.1: Is your software cross-platform compatible? | Yes |  |
+| Question 9.1: Does your software adhere to appropriate accessibility conventions or standards? | Yes |  |
 | Question 9.2: Does your documentation adhere to appropriate accessibility conventions or standards? |  |  |
 | Question 10.1: Is your source code stored in a repository under revision control? | Yes | Github |
 | Question 10.2: Is each source code release a snapshot of the repository? | Yes |  |
