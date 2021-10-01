@@ -41,14 +41,25 @@ function testSearchInGit(){
   searchInGit('Research').then(gitlink => {
     if(gitlink.length==0)
       {
-        throw "Video not found"
+        throw "Github link not found"
       }
 
   })
-
-
 }
+
+function testSearchGoogleScholar(){
+  searchGoogleScholar('Research').then(scholarlink => {
+    if(scholarlink.length==0)
+      {
+        throw "Google scholar link not found"
+      }
+
+  })
+}
+
+
 testSearchPapers();
-testSearchDefinition()
-testSearchVideos()
-testSearchInGit()
+testSearchDefinition();
+testSearchVideos();
+testSearchInGit();
+testSearchGoogleScholar()
