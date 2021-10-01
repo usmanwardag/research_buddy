@@ -86,18 +86,18 @@
 | Question 13.5: Do you list your project's publications on your website or link to a resource where these are available? |  |  |
 | Question 13.6: Do you list third-party publications that refer to your software on your website or link to a resource where these are available? |  |  |
 | Question 13.7: Can users subscribe to notifications to changes to your source code repository? |  |  |
-| Question 13.8: If your software is developed as an open source project (and, not just a project developing open source software), do you have a governance model? |  |  |
-| Question 14.1: Do you accept contributions (e.g. bug fixes, enhancements, documentation updates, tutorials) from people who are not part of your project? |  |  |
-| Question 14.2: Do you have a contributions policy? |  |  |
-| Question 14.3: Is your contributions' policy publicly available? |  |  |
-| Question 14.4: Do contributors keep the copyright/IP of their contributions? |  |  |
-| Question 15.1: Does your website and documentation clearly state the copyright owners of your software and documentation? |  |  |
-| Question 15.2: Does each of your source code files include a copyright statement? |  |  |
-| Question 15.3: Does your website and documentation clearly state the licence of your software? |  |  |
-| Question 15.4: Is your software released under an open source licence? |  |  |
-| Question 15.5: Is your software released under an OSI-approved open-source licence? |  |  |
-| Question 15.6: Does each of your source code files include a licence header? |  |  |
-| Question 15.7: Do you have a recommended citation for your software? |  |  |
-| Question 16.1: Does your website or documentation include a project roadmap (a list of project and development milestones for the next 3, 6 and 12 months)? |  |  |
-| Question 16.2: Does your website or documentation describe how your project is funded, and the period over which funding is guaranteed? |  |  |
-| Question 16.3: Do you make timely announcements of the deprecation of components, APIs, etc.? |  |  |
+| Question 13.8: If your software is developed as an open source project (and, not just a project developing open source software), do you have a governance model? | Yes |  |
+| Question 14.1: Do you accept contributions (e.g. bug fixes, enhancements, documentation updates, tutorials) from people who are not part of your project? | Yes |  |
+| Question 14.2: Do you have a contributions policy? | Yes |  |
+| Question 14.3: Is your contributions' policy publicly available? | Yes |  |
+| Question 14.4: Do contributors keep the copyright/IP of their contributions? | No |  |
+| Question 15.1: Does your website and documentation clearly state the copyright owners of your software and documentation? | No |  |
+| Question 15.2: Does each of your source code files include a copyright statement? | No |  |
+| Question 15.3: Does your website and documentation clearly state the licence of your software? | Yes |  |
+| Question 15.4: Is your software released under an open source licence? | Yes |  |
+| Question 15.5: Is your software released under an OSI-approved open-source licence? | Yes |  |
+| Question 15.6: Does each of your source code files include a licence header? | No |  |
+| Question 15.7: Do you have a recommended citation for your software? | Yes |  |
+| Question 16.1: Does your website or documentation include a project roadmap (a list of project and development milestones for the next 3, 6 and 12 months)? | Yes |  |
+| Question 16.2: Does your website or documentation describe how your project is funded, and the period over which funding is guaranteed? | NA |  |
+| Question 16.3: Do you make timely announcements of the deprecation of components, APIs, etc.? | Yes |  |
