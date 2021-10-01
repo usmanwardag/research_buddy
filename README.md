@@ -23,7 +23,7 @@ Are you someone who frequently reads or writes research papers/articles on the w
 
 I'm sure you've come across this situation at some point! Research Buddy is here to make your life simple.
 
-Double clicking on any text will give you a popup displaying the definition picked up from Wikipedia, the top 5 Paper citations, youtube links, google scholar links, and github links. You can highlight any term, and this tool will provide you the Wikipedia definition with a link to the page, and links pointing to the top 5 related papers as well as the search results from Youtube, Github, Udemy, Google Scholar and Coursera. You get everything in the bubble popup as seen in the video!
+Double clicking on any text will give you a popup displaying the definition picked up from Wikipedia, the top 5 Paper citations, youtube links, google scholar links, and github links. You can highlight any term, and this tool will provide you the Wikipedia definition with a link to the page, and links pointing to the top 5 related papers as well as the search results from Youtube, Github, Udemy, Google Scholar and Coursera. You get everything in the bubble popup as seen below!
 
 
 ## Installation
@@ -51,7 +51,7 @@ You can find our Code documentaion for each method implemented over [here](https
   - If a reader highlights a citation, all other instances of the same citation should be highlighted inside a research paper PDF.
   - Improve features and make the tool more user friendly.
   
- ## Contact
+ ## Contributers
 
 * [Kriti Khullar](https://github.com/kriti0207)
 * [Muskan Gupta](https://github.com/muskan7828)
