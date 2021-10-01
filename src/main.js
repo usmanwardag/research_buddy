@@ -70,11 +70,11 @@ function getHTML(popupInfo) {
 		link = popupInfo.papers[i];
 		html = html.concat(`<a href=${link} target="_blank">${i + 1} </a>`);
 	}
-	html = html.concat(`</p><a href=${popupInfo.youtubeLink} target="_blank"><img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" width="36" height="36"></a>`);
-	html = html.concat(`<a href=${popupInfo.gitLink} target="_blank">GitHub </a>`);
-	html = html.concat(`<a href=${popupInfo.udemyLink} target="_blank">Udemy </a>`);
-	html = html.concat(`<a href=${popupInfo.scholarLink} target="_blank">Google Scholar </a>`);
-	html = html.concat(`<a href=${popupInfo.courseraLink} target="_blank">Coursera</a>`);
+	html = html.concat(`</p><a href=${popupInfo.youtubeLink} target="_blank"><img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" width="36" height="36"> </a>`);
+	html = html.concat(`<a href=${popupInfo.gitLink} target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="30" height="30"> </a>`);
+	html = html.concat(`<a href=${popupInfo.udemyLink} target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-256/udemy-3629125-3030265.png" width="32" height="32"> </a>`);
+	html = html.concat(`<a href=${popupInfo.scholarLink} target="_blank"><img src="https://www.kindpng.com/picc/m/369-3690860_google-scholar-icon-google-scholar-logo-hd-png.png" width="36" height="36"> </a>`);
+	html = html.concat(`<a href=${popupInfo.courseraLink} target="_blank"><img src="https://img.favpng.com/13/2/23/coursera-logo-computer-icons-image-clip-art-png-favpng-xssvncimfAGz1cfUbyFW0bXP3.jpg" width="36" height="36"> </a>`);
 	html = html.concat(`</body></html>`);
 	console.log(html);
 	return html;
