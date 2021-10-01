@@ -16,7 +16,6 @@ Are you someone who frequently reads or writes research papers. Do you get exhau
 
 ![Alt Text](https://media.giphy.com/media/oirLISmToyoeI/giphy.gif?cid=ecf05e47dlrdgathxxv740g1jekiz6zdq9ycppxzdd4dyvo0&rid=giphy.gif&ct=g)
 
-Ahh! So cliche.
 
 If Yes, then this tool is going to make your life simple!
 
