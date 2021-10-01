@@ -1,6 +1,6 @@
 # Research Buddy
 
-| Notes                                                                                                       | Total :         | Evidence  |    
+| Notes                                                                                                       | Total :  (86/87)       | Evidence  |    
 |---                                                                                                          |:---:              |---|
 | workload is spread over the whole team (one team member is often Xtimes more productive than the others...	| 3 | Minimum of 21 commits by each member.                           
 |but nevertheless, here is a track record that everyone is contributing a lot)	                              | 3 |[Commit Insights](https://github.com/usmanwardag/research_buddy/pulse)            
@@ -28,39 +28,39 @@
 |test cases:.a large proportion of the issues related to handling failing cases.	|2| whenever test cases faile, we opened an issue and fixed it
 |evidence that the whole team is using the same tools: everyone can get to all tools and files	                |3 |Everyone is using the same tools like Visual Studio Code for editing code files, github and git command line
 |evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)	|3| Same travis, package, extension and grundle config files updated by everyone.
-|evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)	
-|evidence that the members of the team are working across multiple places in the code base	                    | 3|[Contributors](https://github.com/usmanwardag/research_buddy/graphs/contributors)
-|short release cycles	| (hard to see in short projects) project members are committing often enough so that everyone can get your work
-| Question 1.1: Does your website and documentation provide a clear, high-level overview of your software? |  |  |
-| Question 1.2: Does your website and documentation clearly describe the type of user who should use your software? |  |  |
-| Question 1.3: Do you publish case studies to show how your software has been used by yourself and others? |  |  |
-| Question 2.1: Is the name of your project/software unique? |  |  | Yes, our software name is Research Buddy which is unique and describes our project appropriately. 
-| Question 2.2: Is your project/software name free from trademark violations? |  |  |
-| Question 3.1: Is your software available as a package that can be deployed without building it?  |  |  |
-| Question 3.2: Is your software available for free? |  |  |
-| Question 3.3: Is your source code publicly available to download, either as a downloadable bundle or via access to a source code repository? |  |  |
-| Question 3.4: Is your software hosted in an established, third-party repository likeGitHub (https://github.com), BitBucket (https://bitbucket.org),LaunchPad (https://launchpad.net) orSourceForge (https://sourceforge.net)? |  |  |
-| Question 4.1: Is your documentation clearly available on your website or within your software? |  |  |
-| Question 4.2: Does your documentation include a "quick start" guide, that provides a short overview of how to use your software with some basic examples of use? |  |  |
-| Question 4.3: If you provide more extensive documentation, does this provide clear, step-by-step instructions on how to deploy and use your software? |  |  |
-| Question 4.4: Do you provide a comprehensive guide to all your software’s commands, functions and options?  |  |  |
-| Question 4.5: Do you provide troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages? |  |  |
-| Question 4.6: If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation? |  |  |
-| Question 4.7: Do you store your documentation under revision control with your source code? |  |  |
-| Question 4.8: Do you publish your release history e.g. release data, version numbers, key features of each release etc. on your web site or in your documentation? |  |  |
-| Question 5.1: Does your software describe how a user can get help with using your software? |  |  |
-| Question 5.2: Does your website and documentation describe what support, if any, you provide to users and developers? |  |  |
-| Question 5.3: Does your project have an e-mail address or forum that is solely for supporting users? |  |  |
-| Question 5.4: Are e-mails to your support e-mail address received by more than one person? |  |  |
-| Question 5.5: Does your project have a ticketing system to manage bug reports and feature requests? |  |  |
-| Question 5.6: Is your project's ticketing system publicly visible to your users, so they can view bug reports and feature requests? |  |  |
-| Question 6.1: Is your software’s architecture and design modular? |  |  |
-| Question 6.2: Does your software use an accepted coding standard or convention? |  |  |
-| Question 7.1: Does your software allow data to be imported and exported using open data formats? |  |  |
-| Question 7.2: Does your software allow communications using open communications protocols? |  |  |
-| Question 8.1: Is your software cross-platform compatible? | Yes |  |
-| Question 9.1: Does your software adhere to appropriate accessibility conventions or standards? | Yes |  |
-| Question 9.2: Does your documentation adhere to appropriate accessibility conventions or standards? |  |  |
+|evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)	|3| Veryone tested chrome extension
+|evidence that the members of the team are working across multiple places in the code base	                    | 3|[Contributors](https://github.com/usmanwardag/research_buddy/graphs/contributors) 
+|short release cycles	| 3 | We had multiple releases, as well tested different components iteratively| Frequeny commits by everyone
+| Question 1.1: Does your website and documentation provide a clear, high-level overview of your software? | Yes | Readme |
+| Question 1.2: Does your website and documentation clearly describe the type of user who should use your software? | Yes | Described motivating use cases - mainly for researchers |
+| Question 1.3: Do you publish case studies to show how your software has been used by yourself and others? | Yes | Examples of how softwares through video and screenshots  |
+| Question 2.1: Is the name of your project/software unique? | Yes | Yes, our software name is Research Buddy which is unique and describes our project appropriately.  | 
+| Question 2.2: Is your project/software name free from trademark violations? | Yes |  |
+| Question 3.1: Is your software available as a package that can be deployed without building it?  | Yes | Just needs to be added as a chrome extension |
+| Question 3.2: Is your software available for free? | Yes | MIT license |
+| Question 3.3: Is your source code publicly available to download, either as a downloadable bundle or via access to a source code repository? | Yes | MIT License with Zenodo DOI |
+| Question 3.4: Is your software hosted in an established, third-party repository likeGitHub (https://github.com), BitBucket (https://bitbucket.org),LaunchPad (https://launchpad.net) orSourceForge (https://sourceforge.net)? | Yes | [Github](https://github.com) |
+| Question 4.1: Is your documentation clearly available on your website or within your software? | Yes | Readme + jsdoc documentation |
+| Question 4.2: Does your documentation include a "quick start" guide, that provides a short overview of how to use your software with some basic examples of use? | Yes | Quick guidelines in main README |
+| Question 4.3: If you provide more extensive documentation, does this provide clear, step-by-step instructions on how to deploy and use your software? | Yes | Main README |
+| Question 4.4: Do you provide a comprehensive guide to all your software’s commands, functions and options?  | Yes | With jsdoc that creates documentation for every function |
+| Question 4.5: Do you provide troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages? | Yes | Debugging for chrome extension install |
+| Question 4.6: If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation? | NA | NA |
+| Question 4.7: Do you store your documentation under revision control with your source code? | Yes | In the `out` folder of Github repo |
+| Question 4.8: Do you publish your release history e.g. release data, version numbers, key features of each release etc. on your web site or in your documentation? | Yes | 2 releases |
+| Question 5.1: Does your software describe how a user can get help with using your software? | Yes | Instructions in readme to generate issues |
+| Question 5.2: Does your website and documentation describe what support, if any, you provide to users and developers? | Yes | They can create issues |
+| Question 5.3: Does your project have an e-mail address or forum that is solely for supporting users? | Yes | Email address of a representative  |
+| Question 5.4: Are e-mails to your support e-mail address received by more than one person? | NA | NA |
+| Question 5.5: Does your project have a ticketing system to manage bug reports and feature requests? | Yes | Github issues |
+| Question 5.6: Is your project's ticketing system publicly visible to your users, so they can view bug reports and feature requests? | Yes  | Github issues |
+| Question 6.1: Is your software’s architecture and design modular? | Yes | features, frontend, testing systems are modularly defined |
+| Question 6.2: Does your software use an accepted coding standard or convention? | Yes | Javascript coding conventions  |
+| Question 7.1: Does your software allow data to be imported and exported using open data formats? | Yes | Open data |
+| Question 7.2: Does your software allow communications using open communications protocols? | Yes | Github issues |
+| Question 8.1: Is your software cross-platform compatible? | Yes | Tested on multiple OS systems |
+| Question 9.1: Does your software adhere to appropriate accessibility conventions or standards? | Yes | Standard coding conventions |
+| Question 9.2: Does your documentation adhere to appropriate accessibility conventions or standards? | Yes | Standard documentation conventions  |
 | Question 10.1: Is your source code stored in a repository under revision control? | Yes | Github |
 | Question 10.2: Is each source code release a snapshot of the repository? | Yes |  |
 | Question 10.3: Are releases tagged in the repository? | Yes | V0.5 and V1.0 |
@@ -79,7 +79,8 @@
 | Question 12.3: Do you use continuous integration, automatically running tests whenever changes are made to your source code? | Yes | Travis and Travis build status on the readme |
 | Question 12.4: Are your test results publicly visible? | Yes | With travis |
 | Question 12.5: Are all manually-run tests documented? | Yes | Commented in test folder |
-| Question 13.1: Does your project have resources (e.g. blog, Twitter, RSS feed, Facebook page, wiki, mailing list) that are regularly updated with information about your software? | Yes | Github Wiki page and twitter |
+| Question 13.1: Does your project have resources (e.g. blog, 
+, RSS feed, Facebook page, wiki, mailing list) that are regularly updated with information about your software? | Yes | Github Wiki page and [twitter](https://twitter.com/buddy_research)|
 | Question 13.2: Does your website state how many projects and users are associated with your project? | Yes | Collaborators |
 | Question 13.3: Do you provide success stories on your website? | Yes | Video of successfully using the app |
 | Question 13.4: Do you list your important partners and collaborators on your website? | Yes | Included in readme |
