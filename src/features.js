@@ -40,7 +40,12 @@ async function searchDefinition(input) {
 
 		summary = summary_json.query.pages[pageid].extract;
 		summary = summary.split('.');
+		if(String(summary[0]).includes("undefined")){
+			summary[0] = "No definition found!";
+		}
+		console.log(summary[0]);
 		summary = summary[0] + '. ' + summary[1] + '.';
+
 
 		console.log('Summary');
 		console.log(summary);
