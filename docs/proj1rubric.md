@@ -3,9 +3,9 @@
 | Notes                                                                                                       | evidence        |   |    
 |---                                                                                                          |---              |---|
 | workload is spread over the whole team (one team member is often Xtimes more productive than the others...	|                            
-|but nevertheless, here is a track record that everyone is contributing a lot)	                              |  evidence in GH              
-|Number of commits	                                                                                          |  in GH
-|Number of commits: by different people	                                                                        |in GH
+|but nevertheless, here is a track record that everyone is contributing a lot)	                              |  https://github.com/usmanwardag/research_buddy/pulse             
+|Number of commits	                                                                                          |  https://github.com/usmanwardag/research_buddy/pulse
+|Number of commits: by different people	                                                                        |https://github.com/usmanwardag/research_buddy/pulse
 |Issues reports: there are many	
 |issues are being closed	evidence                                                                              |in GH
 |DOI badge: exists	                                                                                            |in GH
@@ -26,15 +26,15 @@
 |issues are discussed before they are closed	|even if you discuss in slack, need a sumamry statement here
 |Chat channel: exists	
 |test cases:.a large proportion of the issues related to handling failing cases.	|if a test case fails, open an issue and fix it
-|evidence that the whole team is using the same tools: everyone can get to all tools and files	
+|evidence that the whole team is using the same tools: everyone can get to all tools and files	                |Everyone is using the same tools like Visual Studio Code for editing code files
 |evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)	
 |evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)	
-|evidence that the members of the team are working across multiple places in the code base	
+|evidence that the members of the team are working across multiple places in the code base	                    |Work has been divided between all members of the team, so each member gets to contribute in different parts of the code base
 |short release cycles	|(hard to see in short projects) project members are committing often enough so that everyone can get your work
 | Question 1.1: Does your website and documentation provide a clear, high-level overview of your software? |  |  |
 | Question 1.2: Does your website and documentation clearly describe the type of user who should use your software? |  |  |
 | Question 1.3: Do you publish case studies to show how your software has been used by yourself and others? |  |  |
-| Question 2.1: Is the name of your project/software unique? |  |  |
+| Question 2.1: Is the name of your project/software unique? |  |  | Yes, our software name is Research Buddy which is unique and describes our project appropriately. 
 | Question 2.2: Is your project/software name free from trademark violations? |  |  |
 | Question 3.1: Is your software available as a package that can be deployed without building it?  |  |  |
 | Question 3.2: Is your software available for free? |  |  |
