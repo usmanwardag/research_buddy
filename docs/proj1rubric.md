@@ -29,7 +29,7 @@
 |evidence that the whole team is using the same tools: everyone can get to all tools and files	                | |Everyone is using the same tools like Visual Studio Code for editing code files
 |evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)	
 |evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)	
-|evidence that the members of the team are working across multiple places in the code base	                    | |Work has been divided between all members of the team, so each member gets to contribute in different parts of the code base
+|evidence that the members of the team are working across multiple places in the code base	                    | |(https://github.com/usmanwardag/research_buddy/graphs/contributors)
 |short release cycles	|(hard to see in short projects) project members are committing often enough so that everyone can get your work
 | Question 1.1: Does your website and documentation provide a clear, high-level overview of your software? |  |  |
 | Question 1.2: Does your website and documentation clearly describe the type of user who should use your software? |  |  |
