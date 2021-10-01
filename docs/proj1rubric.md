@@ -15,21 +15,21 @@
 |Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing	
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.	
 |Use of version control tools	
-|Use of style checkers	config files                                                                            |in GH showing your config
-|Use of code formatters.	config files                                                                          |in GH showing your this formatter's config
-|Use of syntax checkers.	config files                                                                          |in GH showing this checker's config
-|Use of code coverage	config files                                                                              |in GH
-|other automated analysis tools	config files                                                                    |in GH
-|test cases exist	                                                                                              |dozens of tests and those test cases are more than 30% of the code base
-|test cases are routinely executed	                                                                            |e.g. travis-com.com or github actions or something
+|Use of style checkers	config files                                                                            | |in GH showing your config
+|Use of code formatters.	config files                                                                          | |in GH showing your this formatter's config
+|Use of syntax checkers.	config files                                                                          | |in GH showing this checker's config
+|Use of code coverage	config files                                                                              | |in GH
+|other automated analysis tools	config files                                                                    | |in GH
+|test cases exist	                                                                                              | |dozens of tests and those test cases are more than 30% of the code base
+|test cases are routinely executed	                                                                            | |e.g. travis-com.com or github actions or something
 |the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up	
 |issues are discussed before they are closed	|even if you discuss in slack, need a sumamry statement here
 |Chat channel: exists	
 |test cases:.a large proportion of the issues related to handling failing cases.	|if a test case fails, open an issue and fix it
-|evidence that the whole team is using the same tools: everyone can get to all tools and files	                |Everyone is using the same tools like Visual Studio Code for editing code files
+|evidence that the whole team is using the same tools: everyone can get to all tools and files	                | |Everyone is using the same tools like Visual Studio Code for editing code files
 |evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)	
 |evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)	
-|evidence that the members of the team are working across multiple places in the code base	                    |Work has been divided between all members of the team, so each member gets to contribute in different parts of the code base
+|evidence that the members of the team are working across multiple places in the code base	                    | |Work has been divided between all members of the team, so each member gets to contribute in different parts of the code base
 |short release cycles	|(hard to see in short projects) project members are committing often enough so that everyone can get your work
 | Question 1.1: Does your website and documentation provide a clear, high-level overview of your software? |  |  |
 | Question 1.2: Does your website and documentation clearly describe the type of user who should use your software? |  |  |
