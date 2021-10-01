@@ -1,17 +1,17 @@
 # Research Buddy
 
 | Notes                                                                                                       | Total :         | Evidence  |    
-|---                                                                                                          |---              |---|
+|---                                                                                                          |:---:              |---|
 | workload is spread over the whole team (one team member is often Xtimes more productive than the others...	|                            
-|but nevertheless, here is a track record that everyone is contributing a lot)	                              |  |[Commit Insights](https://github.com/usmanwardag/research_buddy/pulse)            
-|Number of commits	                                                                                          |  |[Commit Count](https://github.com/usmanwardag/research_buddy/pulse)
-|Number of commits: by different people	                                                                       | |[Commit per person](https://github.com/usmanwardag/research_buddy/pulse)
-|Issues reports: there are many	                                                                              |  |[Research Buddy Issues](https://github.com/usmanwardag/research_buddy/issues?q=is%3Aissue+is%3Aclosed)
-|issues are being closed	evidence                                                                              | |[Closed Issues](https://github.com/usmanwardag/research_buddy/issues?q=is%3Aissue+is%3Aclosed)
-|DOI badge: exists	                                                                                            | |in GH
-|Docs: doco generated , format not ugly	                                                                        | |in GH
+|but nevertheless, here is a track record that everyone is contributing a lot)	                              | 3 |[Commit Insights](https://github.com/usmanwardag/research_buddy/pulse)            
+|Number of commits	                                                                                          | 3 |[Commit Count](https://github.com/usmanwardag/research_buddy/pulse)
+|Number of commits: by different people	                                                                      | 3|[Commit per person](https://github.com/usmanwardag/research_buddy/pulse)
+|Issues reports: there are many	                                                                              | 3 |[Research Buddy Issues](https://github.com/usmanwardag/research_buddy/issues?q=is%3Aissue+is%3Aclosed)
+|issues are being closed	evidence                                                                              | 3|[Closed Issues](https://github.com/usmanwardag/research_buddy/issues?q=is%3Aissue+is%3Aclosed)
+|DOI badge: exists	                                                                                            | 3|in GH
+|Docs: doco generated , format not ugly	                                                                        |3 |in GH
 |Docs: what: point descriptions of each class/function (in isolation)	
-|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z	              | |doc page entries
+|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z	              |3 |doc page entries
 |Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing	
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.	
 |Use of version control tools	
