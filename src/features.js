@@ -44,7 +44,7 @@ async function searchDefinition(input) {
 
 		console.log('Summary');
 		console.log(summary);
-		return [summary, pageurl];
+		return summary, pageurl;
 
 	} catch (err) {
 		console.log('Error');
@@ -71,18 +71,18 @@ async function searchPapers(input) {
 		const response = await fetch(url);
 		const json = await response.json();
 
-		//console.log(json);
-
 		var links = [];
+		
 
-		for (let i = 0; i < 5; i++) {
+		for (let i = 0; i < Math.min(5,json.message.items.length); i++) {
+
 			link = json.message.items[i].URL;
 			links.push(link);
 		}
 
 		console.log(links);
 
-		return link;
+		return links;
 	} catch (err) {
 		console.log('Error');
 		console.log(err);
@@ -138,7 +138,7 @@ async function searchVideos(input) {
  * @param {string} input User selected word/phrase
  * @returns {string} Related Github search results
  */
-function searchInGit(input) {
+async function searchInGit(input) {
 	try {
 		const inputValue = input;
 		const searchQuery = inputValue.trim();
