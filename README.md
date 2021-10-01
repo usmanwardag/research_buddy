@@ -4,6 +4,7 @@
 
 [![Build Status](https://app.travis-ci.com/usmanwardag/research_buddy.svg?branch=main)](https://app.travis-ci.com/usmanwardag/research_buddy)
 [![Coverage Status](https://coveralls.io/repos/github/usmanwardag/research_buddy/badge.svg?branch=main)](https://coveralls.io/github/usmanwardag/research_buddy?branch=main)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5542634.svg)](https://doi.org/10.5281/zenodo.5542634)
 
 [![GitHub license](https://img.shields.io/github/license/usmanwardag/research_buddy)](https://github.com/usmanwardag/research_buddy/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/usmanwardag/research_buddy)](https://github.com/usmanwardag/research_buddy/issues)
