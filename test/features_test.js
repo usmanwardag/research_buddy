@@ -1,5 +1,6 @@
 
 function testSearchPapers(){
+  throw "errors in search paper"
   searchPapers('Indoor Maps').then(papers => {
         if(papers.length==0)
           {
@@ -34,10 +35,43 @@ function testSearchVideos(){
       }
 
   })
-
-
 }
 
+
+function testSearchInGit(){
+  searchInGit('Research').then(gitlink => {
+    if(gitlink.length==0)
+      {
+        throw "Github link not found"
+      }
+
+  })
+}
+
+function testSearchGoogleScholar(){
+  searchGoogleScholar('Research').then(scholarlink => {
+    if(scholarlink.length==0)
+      {
+        throw "Google scholar link not found"
+      }
+
+  })
+}
+
+function testSearchCoursera(){
+  searchCoursera('Research').then(courseralink => {
+    if(scholarlink.length==0)
+      {
+        throw "Google scholar link not found"
+      }
+
+  })
+}
+
+
 testSearchPapers();
-testSearchDefinition()
-testSearchVideos()
+testSearchDefinition();
+testSearchVideos();
+testSearchInGit();
+testSearchGoogleScholar();
+testSearchCoursera()
