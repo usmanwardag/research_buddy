@@ -15,10 +15,10 @@
 |Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing	
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.	
 |Use of version control tools	
-|Use of style checkers	config files                                                                            | |[.prettierrc.json](https://github.com/usmanwardag/research_buddy/blob/main/.prettierrc.json)
-|Use of code formatters.	config files                                                                          | |in GH showing your this formatter's config
-|Use of syntax checkers.	config files                                                                          | |in GH showing this checker's config
-|Use of code coverage	config files                                                                              | |in GH
+|Use of style checkers	config files                                                                            |3 |[.prettierrc.json](https://github.com/usmanwardag/research_buddy/blob/main/.prettierrc.json)
+|Use of code formatters.	config files                                                                          |3 |[.prettierrc.json](https://github.com/usmanwardag/research_buddy/blob/main/.prettierrc.json)
+|Use of syntax checkers.	config files                                                                          |3 |in GH showing this checker's config
+|Use of code coverage	config files                                                                              |3 |in GH
 |other automated analysis tools	config files                                                                    | |in GH
 |test cases exist	                                                                                              | |dozens of tests and those test cases are more than 30% of the code base
 |test cases are routinely executed	                                                                            | |e.g. travis-com.com or github actions or something
