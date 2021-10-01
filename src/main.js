@@ -65,7 +65,7 @@ function getHTML(popupInfo) {
   	p.innerHTML = "DEFINITION:"+wikiDefinition;
   	bubbleDOM.body.appendChild(p);*/
 
-	var html = `<html><body><p>${wikiDefinition} <a href=${popupInfo.wikiURL} target="_blank">Read more</a></p><p>Papers: `;
+	var html = `<html><body><p>${wikiDefinition} <a href=${popupInfo.wikiURL} target="_blank">Read more</a></p><p>Research Articles: `;
 	for (let i = 0; i < papersLength; i++) {
 		link = popupInfo.papers[i];
 		html = html.concat(`<a href=${link} target="_blank">${i + 1} </a>`);
