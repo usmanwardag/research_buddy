@@ -15,6 +15,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#why-should-you-use-research-buddy">Why should you use Research Buddy?</a></li>
+    <li><a href="#check-out-the-video">Check out the video!</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#code-documentation">Code Documentation</a></li>
     <li><a href="#how-to-contribute">How to Contribute</a></li>
@@ -37,9 +38,9 @@ Research Buddy is here to make your life simple :)
 
 Double clicking on any text will give you a popup displaying the definition picked up from Wikipedia, the top papers in the field, and youtube, google scholar, and github links. You can highlight any term, and this tool will provide you the Wikipedia definition with a link to the page, and links pointing to the top 5 related papers as well as the search results from Youtube, Github, Udemy, Google Scholar and Coursera. You get everything in a nice organized popup!
 
-[Check out the video!](https://www.youtube.com/watch?v=kn4dpa2_HnQ)
+## Check out the video!
 
-[![Research Buddy](https://github.com/usmanwardag/research_buddy/blob/main/Image1.jpeg)](https://www.youtube.com/watch?v=kn4dpa2_HnQ)
+https://user-images.githubusercontent.com/25104264/136087074-12dfc324-7624-4ec7-95de-ab262e749a4e.mp4
 
 ## Installation
 
